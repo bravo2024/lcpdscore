@@ -1,0 +1,31 @@
+{
+  "frozen_at_utc": "2026-10-31T17:23:30.558067+00:00",
+  "scored_on": "validation only (OOT 2016 not yet scored)",
+  "candidates": [
+    "woe_scorecard",
+    "elasticnet_lr",
+    "xgb_monotone"
+  ],
+  "not_eligible": [
+    "xgb_tuned",
+    "ref_xgb_plus_LC_grade",
+    "ref_LC_subgrade_only",
+    "plain_lr",
+    "l1_lr",
+    "l2_lr"
+  ],
+  "rule": "XGB-monotone wins only if validation AUC exceeds the best interpretable candidate by >= 0.010 AND the paired-bootstrap 95% CI of the gap excludes 0; otherwise the best interpretable candidate wins; WoE scorecard preferred if within 0.005 AUC of ElasticNet.",
+  "validation_auc": {
+    "woe_scorecard": 0.6912247974142983,
+    "elasticnet_lr": 0.6937177929059329,
+    "xgb_monotone": 0.7179461051839708
+  },
+  "best_interpretable": "woe_scorecard",
+  "xgb_monotone_gap_vs_best_interpretable": 0.02672130776967252,
+  "gap_ci95": [
+    0.022610931659910984,
+    0.0308780540783506
+  ],
+  "champion": "xgb_monotone",
+  "sha256_of_rule_body": "1d91d764b83a975ff58fd385eb857867d6752df983b47dc1c86d68a93d3f879e"
+}

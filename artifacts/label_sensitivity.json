@@ -1,0 +1,19 @@
+{
+  "champion": "xgb_monotone",
+  "definition": "bad = Charged Off/Default AND last payment <= month 9 on book (90+ DPD within 12 months)",
+  "oot_loans_total": 318277,
+  "oot_loans_dropped_by_label": 0,
+  "oot_bad_rate_main": 0.04338359353644781,
+  "oot_auc_main": 0.6959023971085697,
+  "oot_bad_rate_window_lastpay_le_12": 0.06318709803096045,
+  "oot_auc_window_lastpay_le_12": 0.6897565607795898,
+  "oot_share_open_at_cut": 0.2810884858158146,
+  "oot_n_old_label_resolved": 228813,
+  "oot_bad_rate_old_lifetime_resolved_only": 0.1984939666889556,
+  "oot_auc_old_lifetime_resolved_only": 0.6795077397520826,
+  "oot_mean_pred_champion": 0.03658871227384404,
+  "matured_2013_14_lifetime_bad_rate": 0.1319165601995498,
+  "matured_2013_14_12m_bad_rate": 0.0296929184157693,
+  "lifetime_to_12m_ratio_matured": 4.442694327058523,
+  "note": "Same champion, same 2016 loans, three label definitions. Ranking power (AUC) is similar; only the bad-rate LEVEL depends on the definition. The old label dropped the loans still open at the data cut."
+}

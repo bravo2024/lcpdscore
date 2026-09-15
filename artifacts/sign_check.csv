@@ -1,0 +1,60 @@
+feature,label,expected_effect_on_pd,train_univariate_direction,plain_lr_coef,scorecard_woe_coef,in_plain_lr,in_scorecard,plain_lr_consistent,scorecard_consistent
+loan_amnt,Loan amount requested ($),1,-1,,,False,False,not in model,not in scorecard
+emp_length,Employment length (years),-1,-1,-0.05392998473450951,-0.47332088061195277,True,True,yes,yes (WoE coef negative)
+annual_inc,Annual income ($),-1,-1,-0.022783455856930514,-0.24867600275096446,True,True,yes,yes (WoE coef negative)
+dti,Debt-to-income ratio (%),1,1,0.1914704178545659,-0.6371299103794533,True,True,yes,yes (WoE coef negative)
+loan_to_income,Loan amount / annual income,1,1,0.14646968933345547,-0.7627554748329944,True,True,yes,yes (WoE coef negative)
+fico,FICO score at application,-1,-1,-0.20779790801869438,-0.4694482781014797,True,True,yes,yes (WoE coef negative)
+credit_history_months,Credit history length (months),-1,-1,,,False,False,not in model,not in scorecard
+delinq_2yrs,Delinquencies in last 2 years,1,1,,,False,False,not in model,not in scorecard
+inq_last_6mths,Credit enquiries in last 6 months,1,1,0.13218220956791,-0.49060156823092044,True,True,yes,yes (WoE coef negative)
+mths_since_last_delinq,Months since last delinquency,-1,-1,,,False,False,not in model,not in scorecard
+mths_since_last_record,Months since last public record,-1,1,,,False,False,not in model,not in scorecard
+mths_since_last_major_derog,Months since last major derogatory,-1,-1,,,False,False,not in model,not in scorecard
+open_acc,Open credit lines,0,-1,,,False,False,n/a (unclear expectation),not in scorecard
+pub_rec,Public records,1,1,,,False,False,not in model,not in scorecard
+revol_bal,Revolving balance ($),0,-1,,,False,False,n/a (unclear expectation),not in scorecard
+revol_util,Revolving utilisation (%),1,1,,,False,False,not in model,not in scorecard
+total_acc,Total credit lines ever,-1,-1,,,False,False,not in model,not in scorecard
+collections_12_mths_ex_med,Collections in last 12 months,1,1,,,False,False,not in model,not in scorecard
+acc_now_delinq,Accounts currently delinquent,1,1,,,False,False,not in model,not in scorecard
+tot_coll_amt,Total collection amount ever ($),1,1,,,False,False,not in model,not in scorecard
+tot_cur_bal,"Total current balance, all accounts ($)",0,-1,,,False,False,n/a (unclear expectation),not in scorecard
+total_rev_hi_lim,Total revolving credit limit ($),-1,-1,,,False,False,not in model,not in scorecard
+acc_open_past_24mths,Accounts opened in past 24 months,1,1,0.18942811826798397,-0.734054918621508,True,True,yes,yes (WoE coef negative)
+avg_cur_bal,Average balance per account ($),0,-1,,,False,False,n/a (unclear expectation),not in scorecard
+bc_open_to_buy,Open-to-buy on bankcards ($),-1,-1,-0.1712237429898281,-0.1921505839437122,True,True,yes,yes (WoE coef negative)
+bc_util,Bankcard utilisation (%),1,1,-0.15897141723449162,-0.6823934916260702,True,True,NO,yes (WoE coef negative)
+chargeoff_within_12_mths,Charge-offs in last 12 months,1,1,,,False,False,not in model,not in scorecard
+delinq_amnt,Past-due amount owed ($),1,1,,,False,False,not in model,not in scorecard
+mo_sin_old_il_acct,Months since oldest instalment account,-1,-1,-0.10812364454119122,-0.5830043272590172,True,True,yes,yes (WoE coef negative)
+mo_sin_old_rev_tl_op,Months since oldest revolving account,-1,-1,-0.0713297937241344,-0.3180958510039251,True,True,yes,yes (WoE coef negative)
+mo_sin_rcnt_rev_tl_op,Months since newest revolving account,-1,-1,0.06903334428341955,,True,False,NO,not in scorecard
+mo_sin_rcnt_tl,Months since newest account,-1,-1,,,False,False,not in model,not in scorecard
+mort_acc,Mortgage accounts,-1,-1,-0.004926323583140319,,True,False,yes,not in scorecard
+mths_since_recent_bc,Months since newest bankcard,-1,-1,-0.1396085874499456,-0.4433701460634172,True,True,yes,yes (WoE coef negative)
+mths_since_recent_bc_dlq,Months since bankcard delinquency,-1,-1,,,False,False,not in model,not in scorecard
+mths_since_recent_inq,Months since latest enquiry,-1,-1,-0.08170327795478936,-0.443152049378353,True,True,yes,yes (WoE coef negative)
+mths_since_recent_revol_delinq,Months since revolving delinquency,-1,-1,,,False,False,not in model,not in scorecard
+num_accts_ever_120_pd,Accounts ever 120+ days past due,1,1,,,False,False,not in model,not in scorecard
+num_actv_bc_tl,Active bankcard accounts,0,-1,,,False,False,n/a (unclear expectation),not in scorecard
+num_actv_rev_tl,Active revolving accounts,0,1,,,False,False,n/a (unclear expectation),not in scorecard
+num_bc_sats,Satisfactory bankcard accounts,0,-1,,,False,False,n/a (unclear expectation),not in scorecard
+num_bc_tl,Bankcard accounts,0,-1,,,False,False,n/a (unclear expectation),not in scorecard
+num_il_tl,Instalment accounts,0,-1,,,False,False,n/a (unclear expectation),not in scorecard
+num_op_rev_tl,Open revolving accounts,0,-1,,,False,False,n/a (unclear expectation),not in scorecard
+num_rev_accts,Revolving accounts,0,-1,,,False,False,n/a (unclear expectation),not in scorecard
+num_rev_tl_bal_gt_0,Revolving accounts with a balance,1,1,,,False,False,not in model,not in scorecard
+num_sats,Satisfactory accounts,0,-1,,,False,False,n/a (unclear expectation),not in scorecard
+num_tl_120dpd_2m,Accounts 120+ dpd in last 2 months,1,-1,,,False,False,not in model,not in scorecard
+num_tl_30dpd,Accounts 30 dpd now,1,1,,,False,False,not in model,not in scorecard
+num_tl_90g_dpd_24m,Accounts 90+ dpd in last 24 months,1,1,,,False,False,not in model,not in scorecard
+num_tl_op_past_12m,Accounts opened in past 12 months,1,1,,,False,False,not in model,not in scorecard
+pct_tl_nvr_dlq,% of accounts never delinquent,-1,1,,,False,False,not in model,not in scorecard
+percent_bc_gt_75,% of bankcards over 75% used,1,1,0.18475597510823757,-0.34107670270229157,True,True,yes,yes (WoE coef negative)
+pub_rec_bankruptcies,Public-record bankruptcies,1,1,,,False,False,not in model,not in scorecard
+tax_liens,Tax liens,1,1,,,False,False,not in model,not in scorecard
+tot_hi_cred_lim,Total highest credit limit ($),-1,-1,-0.0694757457611101,-0.33008741948838416,True,True,yes,yes (WoE coef negative)
+total_bal_ex_mort,Total balance excluding mortgage ($),1,-1,,,False,False,not in model,not in scorecard
+total_bc_limit,Total bankcard limit ($),-1,-1,,,False,False,not in model,not in scorecard
+total_il_high_credit_limit,Total instalment high credit limit ($),0,-1,,,False,False,n/a (unclear expectation),not in scorecard

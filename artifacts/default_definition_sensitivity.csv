@@ -1,0 +1,8 @@
+definition,oot_bad_rate,oot_champion_auc
+"charged off / default, last payment <= month 6",0.024283878508343362,0.7030561020722632
+"charged off / default, last payment <= month 7",0.03037605607693927,0.7001034578391202
+"charged off / default, last payment <= month 8",0.036926953565604805,0.6978193138319226
+"charged off / default, last payment <= month 9 (MAIN)",0.04338359353644781,0.6959023971085697
+"charged off / default, last payment <= month 10",0.04968942147877478,0.6940270595583715
+"charged off / default, last payment <= month 12",0.06318709803096045,0.6897565607795898
+MAIN + late/grace statuses with last payment <= month 9 also bad,0.04338359353644781,0.6959023971085697

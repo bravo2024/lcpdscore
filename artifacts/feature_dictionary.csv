@@ -1,0 +1,63 @@
+feature,label,group,expected_effect_on_PD
+loan_amnt,Loan amount requested ($),Loan,risk up
+emp_length,Employment length (years),Applicant,risk down
+annual_inc,Annual income ($),Applicant,risk down
+dti,Debt-to-income ratio (%),Applicant,risk up
+loan_to_income,Loan amount / annual income,Loan,risk up
+fico,FICO score at application,Bureau,risk down
+credit_history_months,Credit history length (months),Bureau,risk down
+delinq_2yrs,Delinquencies in last 2 years,Bureau,risk up
+inq_last_6mths,Credit enquiries in last 6 months,Bureau,risk up
+mths_since_last_delinq,Months since last delinquency,Bureau,risk down
+mths_since_last_record,Months since last public record,Bureau,risk down
+mths_since_last_major_derog,Months since last major derogatory,Bureau,risk down
+open_acc,Open credit lines,Bureau,unclear
+pub_rec,Public records,Bureau,risk up
+revol_bal,Revolving balance ($),Bureau,unclear
+revol_util,Revolving utilisation (%),Bureau,risk up
+total_acc,Total credit lines ever,Bureau,risk down
+collections_12_mths_ex_med,Collections in last 12 months,Bureau,risk up
+acc_now_delinq,Accounts currently delinquent,Bureau,risk up
+tot_coll_amt,Total collection amount ever ($),Bureau,risk up
+tot_cur_bal,"Total current balance, all accounts ($)",Bureau,unclear
+total_rev_hi_lim,Total revolving credit limit ($),Bureau,risk down
+acc_open_past_24mths,Accounts opened in past 24 months,Bureau,risk up
+avg_cur_bal,Average balance per account ($),Bureau,unclear
+bc_open_to_buy,Open-to-buy on bankcards ($),Bureau,risk down
+bc_util,Bankcard utilisation (%),Bureau,risk up
+chargeoff_within_12_mths,Charge-offs in last 12 months,Bureau,risk up
+delinq_amnt,Past-due amount owed ($),Bureau,risk up
+mo_sin_old_il_acct,Months since oldest instalment account,Bureau,risk down
+mo_sin_old_rev_tl_op,Months since oldest revolving account,Bureau,risk down
+mo_sin_rcnt_rev_tl_op,Months since newest revolving account,Bureau,risk down
+mo_sin_rcnt_tl,Months since newest account,Bureau,risk down
+mort_acc,Mortgage accounts,Bureau,risk down
+mths_since_recent_bc,Months since newest bankcard,Bureau,risk down
+mths_since_recent_bc_dlq,Months since bankcard delinquency,Bureau,risk down
+mths_since_recent_inq,Months since latest enquiry,Bureau,risk down
+mths_since_recent_revol_delinq,Months since revolving delinquency,Bureau,risk down
+num_accts_ever_120_pd,Accounts ever 120+ days past due,Bureau,risk up
+num_actv_bc_tl,Active bankcard accounts,Bureau,unclear
+num_actv_rev_tl,Active revolving accounts,Bureau,unclear
+num_bc_sats,Satisfactory bankcard accounts,Bureau,unclear
+num_bc_tl,Bankcard accounts,Bureau,unclear
+num_il_tl,Instalment accounts,Bureau,unclear
+num_op_rev_tl,Open revolving accounts,Bureau,unclear
+num_rev_accts,Revolving accounts,Bureau,unclear
+num_rev_tl_bal_gt_0,Revolving accounts with a balance,Bureau,risk up
+num_sats,Satisfactory accounts,Bureau,unclear
+num_tl_120dpd_2m,Accounts 120+ dpd in last 2 months,Bureau,risk up
+num_tl_30dpd,Accounts 30 dpd now,Bureau,risk up
+num_tl_90g_dpd_24m,Accounts 90+ dpd in last 24 months,Bureau,risk up
+num_tl_op_past_12m,Accounts opened in past 12 months,Bureau,risk up
+pct_tl_nvr_dlq,% of accounts never delinquent,Bureau,risk down
+percent_bc_gt_75,% of bankcards over 75% used,Bureau,risk up
+pub_rec_bankruptcies,Public-record bankruptcies,Bureau,risk up
+tax_liens,Tax liens,Bureau,risk up
+tot_hi_cred_lim,Total highest credit limit ($),Bureau,risk down
+total_bal_ex_mort,Total balance excluding mortgage ($),Bureau,risk up
+total_bc_limit,Total bankcard limit ($),Bureau,risk down
+total_il_high_credit_limit,Total instalment high credit limit ($),Bureau,unclear
+home_ownership,Home ownership,Applicant,n/a
+verification_status,Income verification,Applicant,n/a
+purpose,Loan purpose,Applicant,n/a

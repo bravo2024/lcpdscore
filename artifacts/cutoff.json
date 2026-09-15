@@ -1,0 +1,19 @@
+{
+  "assumptions": {
+    "margin_pct_of_principal": 0.06,
+    "lgd": 0.85,
+    "ead_pct_of_principal": 0.9,
+    "note": "ASSUMED, not observed, on the 12-month horizon of the label. Margin = 12-month net interest margin after funding and servicing cost on a GOOD loan, as % of principal; a BAD loan (90+ DPD inside 12 months, so most principal still outstanding) loses EAD x LGD x principal. Flat pricing: LendingClub risk-based pricing is ignored; losses after month 12 are not in the label."
+  },
+  "chosen_on": "validation",
+  "cutoff_pd": 0.07085777569700538,
+  "valid_approval_rate": 0.8862844472600571,
+  "valid_bad_rate_approved": 0.0285077576420132,
+  "valid_profit_per_application": 428.8038043376996,
+  "oot_approval_rate_at_cutoff": 0.8929768723470436,
+  "oot_bad_rate_approved": 0.035318457218856215,
+  "oot_profit_per_application": 338.34176676291406,
+  "oot_profit_approve_all": 285.335868991476,
+  "oot_best_possible_cutoff_pd": 0.053453151449115346,
+  "mean_loan_amount": 12680.51728525781
+}

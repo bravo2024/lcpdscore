@@ -1,0 +1,63 @@
+feature,label,csi_train_vs_oot,flag,in_scorecard,iv
+percent_bc_gt_75,% of bankcards over 75% used,0.047446163391737725,stable (<0.10),True,0.03549921231503073
+num_bc_tl,Bankcard accounts,0.044125012399138304,stable (<0.10),False,0.010402115592571821
+revol_util,Revolving utilisation (%),0.04291065577406939,stable (<0.10),False,0.016627619951494328
+bc_util,Bankcard utilisation (%),0.0398112459145474,stable (<0.10),True,0.033983232548942435
+verification_status,Income verification,0.03802570581171271,stable (<0.10),True,0.029852971106987092
+mths_since_last_record,Months since last public record,0.03474152582111599,stable (<0.10),False,0.0017705865408296818
+mo_sin_old_rev_tl_op,Months since oldest revolving account,0.03375947419435346,stable (<0.10),True,0.046140762098859714
+purpose,Loan purpose,0.033292283396537704,stable (<0.10),True,0.04931084177533956
+bc_open_to_buy,Open-to-buy on bankcards ($),0.030345662221965383,stable (<0.10),True,0.07183231502331346
+num_rev_accts,Revolving accounts,0.026940913007983364,stable (<0.10),False,0.006627182154018186
+loan_to_income,Loan amount / annual income,0.018910583417077808,stable (<0.10),True,0.02692555371498104
+total_il_high_credit_limit,Total instalment high credit limit ($),0.018418273294886434,stable (<0.10),False,0.009491639270280504
+inq_last_6mths,Credit enquiries in last 6 months,0.017603959511950772,stable (<0.10),True,0.06694018371015024
+loan_amnt,Loan amount requested ($),0.016490138951142697,stable (<0.10),False,0.019850789132719822
+mort_acc,Mortgage accounts,0.016269329705719766,stable (<0.10),False,0.04083042187007479
+acc_open_past_24mths,Accounts opened in past 24 months,0.013660221679477431,stable (<0.10),True,0.09106807465150618
+num_actv_rev_tl,Active revolving accounts,0.01259287292182137,stable (<0.10),False,0.0017783558790592118
+num_tl_op_past_12m,Accounts opened in past 12 months,0.011733173915890835,stable (<0.10),False,0.08397806358717036
+num_rev_tl_bal_gt_0,Revolving accounts with a balance,0.011186352131806174,stable (<0.10),False,0.0017700173467492825
+total_acc,Total credit lines ever,0.01064934575738103,stable (<0.10),False,0.010061453968758087
+emp_length,Employment length (years),0.010289082605363969,stable (<0.10),True,0.024509665440526057
+total_rev_hi_lim,Total revolving credit limit ($),0.009983958709459697,stable (<0.10),False,0.04557577413864909
+total_bal_ex_mort,Total balance excluding mortgage ($),0.009652372680556475,stable (<0.10),False,0.004306861965404317
+tot_coll_amt,Total collection amount ever ($),0.009561551963557322,stable (<0.10),False,0.0001261757490039983
+num_op_rev_tl,Open revolving accounts,0.009252760428038125,stable (<0.10),False,0.0013138440967465827
+mo_sin_old_il_acct,Months since oldest instalment account,0.008742137078075992,stable (<0.10),True,0.03903459232483683
+revol_bal,Revolving balance ($),0.008535851498491434,stable (<0.10),False,0.017953452876648398
+total_bc_limit,Total bankcard limit ($),0.008502737593303465,stable (<0.10),False,0.056331475700574764
+annual_inc,Annual income ($),0.008000034596715024,stable (<0.10),True,0.0738932523151271
+tot_hi_cred_lim,Total highest credit limit ($),0.007583025280071834,stable (<0.10),True,0.06356771629981525
+num_bc_sats,Satisfactory bankcard accounts,0.00719879743014951,stable (<0.10),False,0.005222611158688411
+dti,Debt-to-income ratio (%),0.006982385870847662,stable (<0.10),True,0.0734160093261821
+home_ownership,Home ownership,0.006903162333327534,stable (<0.10),True,0.0440166175465002
+mths_since_recent_bc,Months since newest bankcard,0.006630922110696307,stable (<0.10),True,0.03436790014197495
+num_actv_bc_tl,Active bankcard accounts,0.006386288515372632,stable (<0.10),False,0.0037725935296943187
+open_acc,Open credit lines,0.006332627119838395,stable (<0.10),False,0.0014138645112288502
+num_sats,Satisfactory accounts,0.005974171834639592,stable (<0.10),False,0.0013714454136085396
+mths_since_recent_bc_dlq,Months since bankcard delinquency,0.005809997821157553,stable (<0.10),False,0.002567954117863878
+mths_since_last_delinq,Months since last delinquency,0.005685705230080469,stable (<0.10),False,0.0036550038351162483
+pct_tl_nvr_dlq,% of accounts never delinquent,0.005681972513210117,stable (<0.10),False,0.0026804398368653584
+mths_since_recent_revol_delinq,Months since revolving delinquency,0.0051147088665248735,stable (<0.10),False,0.0012685140750678153
+fico,FICO score at application,0.004957495410806732,stable (<0.10),True,0.11154682752127654
+num_tl_120dpd_2m,Accounts 120+ dpd in last 2 months,0.0041458407708731505,stable (<0.10),False,0.0002887024109703409
+mths_since_last_major_derog,Months since last major derogatory,0.003981866333156239,stable (<0.10),False,0.0009507884913223728
+credit_history_months,Credit history length (months),0.003944771691042329,stable (<0.10),False,0.0380208221768327
+mo_sin_rcnt_tl,Months since newest account,0.0037213248740848065,stable (<0.10),False,0.061457378794090856
+tot_cur_bal,"Total current balance, all accounts ($)",0.002577939148165584,stable (<0.10),False,0.05130719197991691
+pub_rec,Public records,0.0025652951998501624,stable (<0.10),False,0.0006717803567387135
+num_accts_ever_120_pd,Accounts ever 120+ days past due,0.002499572926754108,stable (<0.10),False,0.0005431718515446147
+num_il_tl,Instalment accounts,0.002186383408468489,stable (<0.10),False,0.002044919910890744
+delinq_2yrs,Delinquencies in last 2 years,0.0017336519272569471,stable (<0.10),False,0.001084045907518864
+mths_since_recent_inq,Months since latest enquiry,0.0016503139131441439,stable (<0.10),True,0.06770869183675302
+mo_sin_rcnt_rev_tl_op,Months since newest revolving account,0.0015549615644630775,stable (<0.10),False,0.03137967493151584
+avg_cur_bal,Average balance per account ($),0.001500378110935616,stable (<0.10),False,0.05610606442763791
+pub_rec_bankruptcies,Public-record bankruptcies,1.4010185477236954e-05,stable (<0.10),False,0.00035460915156023944
+delinq_amnt,Past-due amount owed ($),0.0,stable (<0.10),False,0.0
+collections_12_mths_ex_med,Collections in last 12 months,0.0,stable (<0.10),False,0.0
+acc_now_delinq,Accounts currently delinquent,0.0,stable (<0.10),False,0.0
+chargeoff_within_12_mths,Charge-offs in last 12 months,0.0,stable (<0.10),False,0.0
+num_tl_90g_dpd_24m,Accounts 90+ dpd in last 24 months,0.0,stable (<0.10),False,0.0007088850554148738
+num_tl_30dpd,Accounts 30 dpd now,0.0,stable (<0.10),False,0.0
+tax_liens,Tax liens,0.0,stable (<0.10),False,0.0

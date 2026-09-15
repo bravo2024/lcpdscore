@@ -1,0 +1,92 @@
+{
+  "base_rho": 0.03,
+  "rho_grid": [
+    0.01,
+    0.02,
+    0.03,
+    0.04
+  ],
+  "calibration_intercept_slope": {
+    "xgb_monotone": {
+      "valid": {
+        "intercept_citl": -0.00012093516511812313,
+        "intercept_ci": [
+          -0.0323527925416876,
+          0.032110922211451357
+        ],
+        "slope": 0.999727137432286,
+        "slope_ci": [
+          0.9574645839465066,
+          1.0419896909180655
+        ],
+        "n": 107338,
+        "mean_pred": 0.03674791033374871,
+        "obs_rate": 0.036743744060817235
+      },
+      "oot": {
+        "intercept_citl": 0.18224464276620728,
+        "intercept_ci": [
+          0.16494330024551004,
+          0.1995459852869045
+        ],
+        "slope": 0.9305801722185478,
+        "slope_ci": [
+          0.9072949384340847,
+          0.953865406003011
+        ],
+        "n": 318277,
+        "mean_pred": 0.03658871227384404,
+        "obs_rate": 0.04338359353644781
+      }
+    },
+    "woe_scorecard": {
+      "valid": {
+        "intercept_citl": -0.0008955151931673774,
+        "intercept_ci": [
+          -0.03299905766180799,
+          0.031208027275473234
+        ],
+        "slope": 0.9993031251619224,
+        "slope_ci": [
+          0.9510332044826078,
+          1.0475730458412371
+        ],
+        "n": 107338,
+        "mean_pred": 0.03677485286365686,
+        "obs_rate": 0.036743744060817235
+      },
+      "oot": {
+        "intercept_citl": 0.18549786465167942,
+        "intercept_ci": [
+          0.16827138271636422,
+          0.20272434658699462
+        ],
+        "slope": 0.9298094247339563,
+        "slope_ci": [
+          0.9030092124121077,
+          0.9566096370558049
+        ],
+        "n": 318277,
+        "mean_pred": 0.03642524257928302,
+        "obs_rate": 0.04338359353644781
+      }
+    }
+  },
+  "portfolio_oot": {
+    "n": 318277,
+    "bads": 13808,
+    "predicted_pd": 0.03658871227384404,
+    "observed_rate": 0.04338359353644781,
+    "binomial_p_two": 1.1082114384427374e-87,
+    "jeffreys_p_two": 1.0139129371952538e-87,
+    "vasicek_p_two_rho0.01": 0.3814473488886861,
+    "vasicek_p_two_rho0.02": 0.4964340989866816,
+    "vasicek_p_two_rho0.03": 0.5448872925836349,
+    "vasicek_p_two_rho0.04": 0.5700764875026004
+  },
+  "grades_failing_binomial_5pct": 5,
+  "grades_failing_jeffreys_5pct": 5,
+  "grades_failing_vasicek_5pct": 0,
+  "grades_failing_vasicek_1pct": 0,
+  "method_note": "Binomial assumes independent defaults (reference only). Jeffreys is a Bayesian posterior test, still independent. Vasicek integrates the binomial over one systematic factor with asset correlation rho."
+}

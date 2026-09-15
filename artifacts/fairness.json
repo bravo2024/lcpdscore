@@ -1,0 +1,15 @@
+{
+  "cutoff_pd": 0.07085777569700538,
+  "protected_attributes_in_data": false,
+  "geography_in_model": false,
+  "income_in_model": true,
+  "lowest_adverse_impact_ratio": 0.8012837435588575,
+  "bands_flagged_four_fifths": 0,
+  "best_approval_band": ">= $120k",
+  "worst_approval_band": "< $40k",
+  "approval_rate_overall": 0.8938063385038818,
+  "declined_applicants": 33799,
+  "scorecard_variables_mapped_to_adverse_action": 18,
+  "scorecard_variables": 18,
+  "caveat": "No protected-class data in the public file: this is an income-band screen, not a disparate-impact test; four-fifths < 0.80 is a review flag, not a finding."
+}

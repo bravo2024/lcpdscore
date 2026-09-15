@@ -1,0 +1,4 @@
+set,issue_window,rows_before_sampling,rows_used,bad_rate
+train,Jan-2013 to Aug-2015,438588,400000,0.031275
+validation,Sep-2015 to Dec-2015,107338,107338,0.036743744060817235
+OOT test,Jan-2016 to Dec-2016,318277,318277,0.04338359353644781

@@ -1,0 +1,30 @@
+{
+  "converged": true,
+  "pseudo_r2": 0.051115369236226504,
+  "variables": [
+    "fico",
+    "acc_open_past_24mths",
+    "annual_inc",
+    "dti",
+    "bc_open_to_buy",
+    "mths_since_recent_inq",
+    "inq_last_6mths",
+    "tot_hi_cred_lim",
+    "purpose",
+    "mo_sin_old_rev_tl_op",
+    "home_ownership",
+    "mo_sin_old_il_acct",
+    "percent_bc_gt_75",
+    "mths_since_recent_bc",
+    "bc_util",
+    "verification_status",
+    "loan_to_income",
+    "emp_length"
+  ],
+  "n_variables": 18,
+  "pdo": 20.0,
+  "base_score": 600.0,
+  "base_odds_good_to_bad": 50.0,
+  "factor": 28.85390081777927,
+  "offset": 487.1228762045055
+}

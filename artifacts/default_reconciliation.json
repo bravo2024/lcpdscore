@@ -1,0 +1,24 @@
+{
+  "definition": "bad = Charged Off / Default AND last payment <= month 9",
+  "population": "36-month loans issued 2013-2016",
+  "charged_off_loans": 122200,
+  "charged_off_share_last_payment_month_le_9": 0.25752045826513914,
+  "charged_off_share_last_payment_month_10_12": 0.12562193126022914,
+  "charged_off_share_last_payment_after_12": 0.6168576104746317,
+  "charged_off_never_paid_month0_share": 0.006350245499181669,
+  "median_last_payment_month_charged_off": 15.0,
+  "late_or_default_statuses_considered": [
+    "Late (31-120 days)",
+    "Late (16-30 days)",
+    "In Grace Period",
+    "Default"
+  ],
+  "loans_in_those_statuses_with_last_payment_le_9": 0,
+  "of_which_not_in_bad_class": 0,
+  "share_not_in_bad_class": 0.0,
+  "not_bad_as_share_of_labelled_bads": 0.0,
+  "oot_bad_rate_main": 0.04338359353644781,
+  "oot_bad_rate_if_added": 0.04338359353644781,
+  "charge_off_date_available": false,
+  "lag_note": "No charge-off date in the public file: the last-payment-to-charge-off lag is not measured. Typical convention is charge-off at ~120-150 DPD, i.e. ~4-5 months after the last payment, which supports month 9 as the 90+ DPD-by-month-12 boundary."
+}

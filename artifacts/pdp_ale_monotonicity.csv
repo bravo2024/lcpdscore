@@ -1,0 +1,13 @@
+feature,label,shap_rank,expected_sign,constraint_applied,pdp_direction,pdp_against_share,ale_direction,ale_against_share,pdp_consistent_with_expected,ale_consistent_with_expected,verdict
+dti,Debt-to-income ratio (%),1,1,1,risk rises with the feature,0.0,risk rises with the feature,0.0,True,True,constrained and monotone
+fico,FICO score at application,2,-1,-1,risk falls with the feature,0.0,risk falls with the feature,0.0,True,True,constrained and monotone
+acc_open_past_24mths,Accounts opened in past 24 months,3,1,1,risk rises with the feature,0.0,risk rises with the feature,0.0,True,True,constrained and monotone
+mths_since_recent_inq,Months since latest enquiry,5,-1,-1,risk falls with the feature,0.0,risk falls with the feature,0.0,True,True,constrained and monotone
+num_tl_op_past_12m,Accounts opened in past 12 months,6,1,1,risk rises with the feature,0.0,risk rises with the feature,0.0,True,True,constrained and monotone
+loan_to_income,Loan amount / annual income,7,1,1,risk rises with the feature,0.0,risk rises with the feature,0.0,True,True,constrained and monotone
+annual_inc,Annual income ($),8,-1,-1,risk falls with the feature,0.0,risk falls with the feature,0.0,True,True,constrained and monotone
+percent_bc_gt_75,% of bankcards over 75% used,9,1,1,risk rises with the feature,0.0,risk rises with the feature,0.0,True,True,constrained and monotone
+num_actv_rev_tl,Active revolving accounts,10,0,0,risk falls with the feature,0.0,risk falls with the feature,0.0,,,unconstrained: no expectation set
+total_il_high_credit_limit,Total instalment high credit limit ($),11,0,0,risk falls with the feature,0.010731141256594582,risk falls with the feature,0.0,,,unconstrained: no expectation set
+mo_sin_old_il_acct,Months since oldest instalment account,12,-1,-1,risk falls with the feature,0.0,risk falls with the feature,0.0,True,True,constrained and monotone
+inq_last_6mths,Credit enquiries in last 6 months,13,1,1,risk rises with the feature,0.0,risk rises with the feature,0.0,True,True,constrained and monotone

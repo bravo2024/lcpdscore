@@ -1,0 +1,24 @@
+{
+  "champion": "xgb_monotone",
+  "long_run_window": "issue years 2013-2015 (development window only; 2016 never used for fitting)",
+  "long_run_default_rate": 0.03235053835135165,
+  "default_rate_by_year": {
+    "2013": 0.028579394953297085,
+    "2014": 0.03038075905763671,
+    "2015": 0.03482084160970403
+  },
+  "validation_default_rate": 0.036743744060817235,
+  "moc_rel_stated": 0.1,
+  "moc_note": "STATED judgement, not estimated: +10% relative to the long-run PD (table also shows 0% and 20%). Real MoC is sized from estimation error, data deficiency and model weakness.",
+  "target_pd_with_moc": 0.03558559218648682,
+  "oot_obs_rate": 0.04338359353644781,
+  "oot_pred_over_actual_before": 0.8433767074436748,
+  "oot_pred_over_actual_after": 0.8306730734338131,
+  "oot_mean_pred_before": 0.03658871227384404,
+  "oot_mean_pred_after": 0.03603758297952441,
+  "oot_ece_before": 0.006794881262603779,
+  "oot_ece_after": 0.007346010556923392,
+  "ex_post_moc_that_would_have_covered_2016": 0.3410470349911561,
+  "intercept_shift_champion": -0.01614355575621524,
+  "reading": "The long-run anchor is a through-the-cycle PD (capital / provisioning style). 2016 is a worse vintage than 2013-2015, so it sits further below the 2016 outcome than the point-in-time calibrator; the stated MoC closes only part of the gap."
+}

@@ -1,0 +1,697 @@
+{
+  "numeric": [
+    "loan_amnt",
+    "emp_length",
+    "annual_inc",
+    "dti",
+    "loan_to_income",
+    "fico",
+    "credit_history_months",
+    "delinq_2yrs",
+    "inq_last_6mths",
+    "mths_since_last_delinq",
+    "mths_since_last_record",
+    "mths_since_last_major_derog",
+    "open_acc",
+    "pub_rec",
+    "revol_bal",
+    "revol_util",
+    "total_acc",
+    "collections_12_mths_ex_med",
+    "acc_now_delinq",
+    "tot_coll_amt",
+    "tot_cur_bal",
+    "total_rev_hi_lim",
+    "acc_open_past_24mths",
+    "avg_cur_bal",
+    "bc_open_to_buy",
+    "bc_util",
+    "chargeoff_within_12_mths",
+    "delinq_amnt",
+    "mo_sin_old_il_acct",
+    "mo_sin_old_rev_tl_op",
+    "mo_sin_rcnt_rev_tl_op",
+    "mo_sin_rcnt_tl",
+    "mort_acc",
+    "mths_since_recent_bc",
+    "mths_since_recent_bc_dlq",
+    "mths_since_recent_inq",
+    "mths_since_recent_revol_delinq",
+    "num_accts_ever_120_pd",
+    "num_actv_bc_tl",
+    "num_actv_rev_tl",
+    "num_bc_sats",
+    "num_bc_tl",
+    "num_il_tl",
+    "num_op_rev_tl",
+    "num_rev_accts",
+    "num_rev_tl_bal_gt_0",
+    "num_sats",
+    "num_tl_120dpd_2m",
+    "num_tl_30dpd",
+    "num_tl_90g_dpd_24m",
+    "num_tl_op_past_12m",
+    "pct_tl_nvr_dlq",
+    "percent_bc_gt_75",
+    "pub_rec_bankruptcies",
+    "tax_liens",
+    "tot_hi_cred_lim",
+    "total_bal_ex_mort",
+    "total_bc_limit",
+    "total_il_high_credit_limit"
+  ],
+  "categorical": [
+    "home_ownership",
+    "verification_status",
+    "purpose"
+  ],
+  "winsor": [
+    0.005,
+    0.995
+  ],
+  "num_params": {
+    "loan_amnt": {
+      "lo": 1200.0,
+      "hi": 35000.0,
+      "log": false,
+      "median": 10000.0,
+      "mean": 12694.304,
+      "std": 7790.36895159132,
+      "miss_share": 0.0,
+      "flag": false
+    },
+    "emp_length": {
+      "lo": 0.0,
+      "hi": 10.0,
+      "log": false,
+      "median": 6.0,
+      "mean": 5.9421525,
+      "std": 3.5513261884196012,
+      "miss_share": 0.0592825,
+      "flag": true
+    },
+    "annual_inc": {
+      "lo": 15000.0,
+      "hi": 300000.0,
+      "log": true,
+      "median": 11.002116507732017,
+      "mean": 11.031929565865477,
+      "std": 0.5337697623520266,
+      "miss_share": 0.0,
+      "flag": false
+    },
+    "dti": {
+      "lo": 1.38,
+      "hi": 38.36,
+      "log": false,
+      "median": 17.21,
+      "mean": 17.749770724999994,
+      "std": 8.185074191128914,
+      "miss_share": 0.0,
+      "flag": false
+    },
+    "loan_to_income": {
+      "lo": 0.020833333333333332,
+      "hi": 0.4796153846153846,
+      "log": false,
+      "median": 0.18333333333333332,
+      "mean": 0.19871383402966483,
+      "std": 0.10444048544427117,
+      "miss_share": 0.0,
+      "flag": false
+    },
+    "fico": {
+      "lo": 662.0,
+      "hi": 807.0,
+      "log": false,
+      "median": 687.0,
+      "mean": 695.1347375,
+      "std": 29.64643200424906,
+      "miss_share": 0.0,
+      "flag": false
+    },
+    "credit_history_months": {
+      "lo": 42.0,
+      "hi": 519.0,
+      "log": false,
+      "median": 177.0,
+      "mean": 195.0169175,
+      "std": 90.08245760646646,
+      "miss_share": 0.0,
+      "flag": false
+    },
+    "delinq_2yrs": {
+      "lo": 0.0,
+      "hi": 5.0,
+      "log": true,
+      "median": 0.0,
+      "mean": 0.17757093369093938,
+      "std": 0.384129800307673,
+      "miss_share": 0.0,
+      "flag": false
+    },
+    "inq_last_6mths": {
+      "lo": 0.0,
+      "hi": 5.0,
+      "log": false,
+      "median": 0.0,
+      "mean": 0.6872475,
+      "std": 0.966600077345446,
+      "miss_share": 0.0,
+      "flag": false
+    },
+    "mths_since_last_delinq": {
+      "lo": 1.0,
+      "hi": 81.0,
+      "log": false,
+      "median": 31.0,
+      "mean": 32.4557875,
+      "std": 15.391301520214551,
+      "miss_share": 0.5018875,
+      "flag": true
+    },
+    "mths_since_last_record": {
+      "lo": 6.0,
+      "hi": 119.0,
+      "log": false,
+      "median": 70.0,
+      "mean": 70.203055,
+      "std": 11.709151183075596,
+      "miss_share": 0.8257575,
+      "flag": true
+    },
+    "mths_since_last_major_derog": {
+      "lo": 2.0,
+      "hi": 84.0,
+      "log": false,
+      "median": 43.0,
+      "mean": 42.93058,
+      "std": 10.948613635728556,
+      "miss_share": 0.7233475,
+      "flag": true
+    },
+    "open_acc": {
+      "lo": 3.0,
+      "hi": 31.0,
+      "log": false,
+      "median": 10.0,
+      "mean": 11.363275,
+      "std": 5.113379669163598,
+      "miss_share": 0.0,
+      "flag": false
+    },
+    "pub_rec": {
+      "lo": 0.0,
+      "hi": 3.0,
+      "log": true,
+      "median": 0.0,
+      "mean": 0.13513275737029817,
+      "std": 0.3051570396340196,
+      "miss_share": 0.0,
+      "flag": false
+    },
+    "revol_bal": {
+      "lo": 121.0,
+      "hi": 125482.005,
+      "log": true,
+      "median": 9.280798835624744,
+      "mean": 9.222193670148593,
+      "std": 0.9692120796284183,
+      "miss_share": 0.0,
+      "flag": false
+    },
+    "revol_util": {
+      "lo": 0.9,
+      "hi": 99.6,
+      "log": false,
+      "median": 54.9,
+      "mean": 54.37814599999998,
+      "std": 23.28416130297888,
+      "miss_share": 0.0004975,
+      "flag": false
+    },
+    "total_acc": {
+      "lo": 5.0,
+      "hi": 63.0,
+      "log": false,
+      "median": 23.0,
+      "mean": 24.807005,
+      "std": 11.605372447346154,
+      "miss_share": 0.0,
+      "flag": false
+    },
+    "collections_12_mths_ex_med": {
+      "lo": 0.0,
+      "hi": 1.0,
+      "log": true,
+      "median": 0.0,
+      "mean": 0.00963128007388044,
+      "std": 0.0811366102965849,
+      "miss_share": 0.0,
+      "flag": false
+    },
+    "acc_now_delinq": {
+      "lo": 0.0,
+      "hi": 0.0,
+      "log": false,
+      "median": 0.0,
+      "mean": 0.0,
+      "std": 1.0,
+      "miss_share": 0.0,
+      "flag": false
+    },
+    "tot_coll_amt": {
+      "lo": 0.0,
+      "hi": 9120.020000000019,
+      "log": true,
+      "median": 0.0,
+      "mean": 0.8833070233298416,
+      "std": 2.1950565021909223,
+      "miss_share": 0.0,
+      "flag": false
+    },
+    "tot_cur_bal": {
+      "lo": 2130.0,
+      "hi": 777302.0950000001,
+      "log": false,
+      "median": 64067.0,
+      "mean": 126130.60680249995,
+      "std": 140440.27154104703,
+      "miss_share": 0.0,
+      "flag": false
+    },
+    "total_rev_hi_lim": {
+      "lo": 2000.0,
+      "hi": 186700.13000000012,
+      "log": true,
+      "median": 9.980494888896912,
+      "mean": 9.971336763032516,
+      "std": 0.8074307504852019,
+      "miss_share": 0.0,
+      "flag": false
+    },
+    "acc_open_past_24mths": {
+      "lo": 0.0,
+      "hi": 15.0,
+      "log": false,
+      "median": 4.0,
+      "mean": 4.3260375,
+      "std": 2.8635768801914794,
+      "miss_share": 0.0,
+      "flag": false
+    },
+    "avg_cur_bal": {
+      "lo": 333.0,
+      "hi": 87587.99999999953,
+      "log": true,
+      "median": 8.736007384569218,
+      "mean": 8.793558281049478,
+      "std": 1.1694365833824345,
+      "miss_share": 2.25e-05,
+      "flag": false
+    },
+    "bc_open_to_buy": {
+      "lo": 0.0,
+      "hi": 83636.94999999995,
+      "log": true,
+      "median": 8.22764270790443,
+      "mean": 7.948110998451492,
+      "std": 1.9380376201942595,
+      "miss_share": 0.009735,
+      "flag": false
+    },
+    "bc_util": {
+      "lo": 0.0,
+      "hi": 102.2,
+      "log": false,
+      "median": 67.0,
+      "mean": 63.139641999999995,
+      "std": 26.73205352229084,
+      "miss_share": 0.010405,
+      "flag": false
+    },
+    "chargeoff_within_12_mths": {
+      "lo": 0.0,
+      "hi": 1.0,
+      "log": true,
+      "median": 0.0,
+      "mean": 0.006006120319551924,
+      "std": 0.06424221510808467,
+      "miss_share": 0.0,
+      "flag": false
+    },
+    "delinq_amnt": {
+      "lo": 0.0,
+      "hi": 0.0,
+      "log": false,
+      "median": 0.0,
+      "mean": 0.0,
+      "std": 1.0,
+      "miss_share": 0.0,
+      "flag": false
+    },
+    "mo_sin_old_il_acct": {
+      "lo": 7.0,
+      "hi": 301.0,
+      "log": false,
+      "median": 128.0,
+      "mean": 124.8892125,
+      "std": 50.61496723615237,
+      "miss_share": 0.037885,
+      "flag": true
+    },
+    "mo_sin_old_rev_tl_op": {
+      "lo": 25.0,
+      "hi": 515.0,
+      "log": false,
+      "median": 164.0,
+      "mean": 181.2098725,
+      "std": 93.31783627249479,
+      "miss_share": 0.0,
+      "flag": false
+    },
+    "mo_sin_rcnt_rev_tl_op": {
+      "lo": 0.0,
+      "hi": 95.0,
+      "log": true,
+      "median": 2.1972245773362196,
+      "mean": 2.205526594653959,
+      "std": 0.9308022293152369,
+      "miss_share": 0.0,
+      "flag": false
+    },
+    "mo_sin_rcnt_tl": {
+      "lo": 0.0,
+      "hi": 61.0,
+      "log": true,
+      "median": 1.9459101490553132,
+      "mean": 1.9108067103268738,
+      "std": 0.7739038465591191,
+      "miss_share": 0.0,
+      "flag": false
+    },
+    "mort_acc": {
+      "lo": 0.0,
+      "hi": 9.0,
+      "log": false,
+      "median": 1.0,
+      "mean": 1.6371325,
+      "std": 2.0018141011614334,
+      "miss_share": 0.0,
+      "flag": false
+    },
+    "mths_since_recent_bc": {
+      "lo": 0.0,
+      "hi": 169.0,
+      "log": true,
+      "median": 2.70805020110221,
+      "mean": 2.7057666141115684,
+      "std": 1.0325310636129923,
+      "miss_share": 0.00901,
+      "flag": false
+    },
+    "mths_since_recent_bc_dlq": {
+      "lo": 1.0,
+      "hi": 83.0,
+      "log": false,
+      "median": 39.0,
+      "mean": 39.30229,
+      "std": 11.340540872300862,
+      "miss_share": 0.742795,
+      "flag": true
+    },
+    "mths_since_recent_inq": {
+      "lo": 0.0,
+      "hi": 23.0,
+      "log": false,
+      "median": 5.0,
+      "mean": 6.7358875,
+      "std": 5.616611162719391,
+      "miss_share": 0.10409,
+      "flag": true
+    },
+    "mths_since_recent_revol_delinq": {
+      "lo": 1.0,
+      "hi": 82.0,
+      "log": false,
+      "median": 33.0,
+      "mean": 34.020685,
+      "std": 13.21660712238641,
+      "miss_share": 0.6480275,
+      "flag": true
+    },
+    "num_accts_ever_120_pd": {
+      "lo": 0.0,
+      "hi": 8.0,
+      "log": true,
+      "median": 0.0,
+      "mean": 0.2382117887914444,
+      "std": 0.47658654595749367,
+      "miss_share": 0.0,
+      "flag": false
+    },
+    "num_actv_bc_tl": {
+      "lo": 0.0,
+      "hi": 12.0,
+      "log": false,
+      "median": 3.0,
+      "mean": 3.6409575,
+      "std": 2.10942340637821,
+      "miss_share": 0.0,
+      "flag": false
+    },
+    "num_actv_rev_tl": {
+      "lo": 1.0,
+      "hi": 18.0,
+      "log": false,
+      "median": 5.0,
+      "mean": 5.6800125,
+      "std": 3.0733864244703395,
+      "miss_share": 0.0,
+      "flag": false
+    },
+    "num_bc_sats": {
+      "lo": 0.0,
+      "hi": 16.0,
+      "log": false,
+      "median": 4.0,
+      "mean": 4.6130825,
+      "std": 2.683624480588972,
+      "miss_share": 0.0,
+      "flag": false
+    },
+    "num_bc_tl": {
+      "lo": 1.0,
+      "hi": 26.0,
+      "log": false,
+      "median": 7.0,
+      "mean": 8.3650925,
+      "std": 4.731496690700238,
+      "miss_share": 0.0,
+      "flag": false
+    },
+    "num_il_tl": {
+      "lo": 0.0,
+      "hi": 39.0,
+      "log": false,
+      "median": 6.0,
+      "mean": 8.0287425,
+      "std": 6.934027081752322,
+      "miss_share": 0.0,
+      "flag": false
+    },
+    "num_op_rev_tl": {
+      "lo": 1.0,
+      "hi": 25.0,
+      "log": false,
+      "median": 7.0,
+      "mean": 8.1388425,
+      "std": 4.219806248761811,
+      "miss_share": 0.0,
+      "flag": false
+    },
+    "num_rev_accts": {
+      "lo": 3.0,
+      "hi": 44.0,
+      "log": false,
+      "median": 13.0,
+      "mean": 14.8149275,
+      "std": 7.869187726828839,
+      "miss_share": 0.0,
+      "flag": false
+    },
+    "num_rev_tl_bal_gt_0": {
+      "lo": 1.0,
+      "hi": 18.0,
+      "log": false,
+      "median": 5.0,
+      "mean": 5.6424275,
+      "std": 3.0353331679342097,
+      "miss_share": 0.0,
+      "flag": false
+    },
+    "num_sats": {
+      "lo": 3.0,
+      "hi": 31.0,
+      "log": false,
+      "median": 10.0,
+      "mean": 11.3161575,
+      "std": 5.104561399039102,
+      "miss_share": 0.0,
+      "flag": false
+    },
+    "num_tl_120dpd_2m": {
+      "lo": 0.0,
+      "hi": 0.0,
+      "log": false,
+      "median": 0.0,
+      "mean": 0.0,
+      "std": 1.0,
+      "miss_share": 0.0332175,
+      "flag": true
+    },
+    "num_tl_30dpd": {
+      "lo": 0.0,
+      "hi": 0.0,
+      "log": false,
+      "median": 0.0,
+      "mean": 0.0,
+      "std": 1.0,
+      "miss_share": 0.0,
+      "flag": false
+    },
+    "num_tl_90g_dpd_24m": {
+      "lo": 0.0,
+      "hi": 3.0,
+      "log": true,
+      "median": 0.0,
+      "mean": 0.04939528953605256,
+      "std": 0.2045704542175787,
+      "miss_share": 0.0,
+      "flag": false
+    },
+    "num_tl_op_past_12m": {
+      "lo": 0.0,
+      "hi": 9.0,
+      "log": false,
+      "median": 2.0,
+      "mean": 2.01132,
+      "std": 1.6499980799499494,
+      "miss_share": 0.0,
+      "flag": false
+    },
+    "pct_tl_nvr_dlq": {
+      "lo": 57.1,
+      "hi": 100.0,
+      "log": false,
+      "median": 98.0,
+      "mean": 94.17508574999998,
+      "std": 8.487166360764105,
+      "miss_share": 0.0002575,
+      "flag": false
+    },
+    "percent_bc_gt_75": {
+      "lo": 0.0,
+      "hi": 100.0,
+      "log": false,
+      "median": 50.0,
+      "mean": 48.78235109999999,
+      "std": 35.25012294787532,
+      "miss_share": 0.0102575,
+      "flag": false
+    },
+    "pub_rec_bankruptcies": {
+      "lo": 0.0,
+      "hi": 2.0,
+      "log": true,
+      "median": 0.0,
+      "mean": 0.09186475329092647,
+      "std": 0.24189938487326754,
+      "miss_share": 0.0,
+      "flag": false
+    },
+    "tax_liens": {
+      "lo": 0.0,
+      "hi": 2.0,
+      "log": true,
+      "median": 0.0,
+      "mean": 0.026955405312922,
+      "std": 0.15051506614555094,
+      "miss_share": 0.0,
+      "flag": false
+    },
+    "tot_hi_cred_lim": {
+      "lo": 5900.0,
+      "hi": 879443.3500000013,
+      "log": false,
+      "median": 92096.0,
+      "mean": 155671.91059249997,
+      "std": 156859.16850285968,
+      "miss_share": 0.0,
+      "flag": false
+    },
+    "total_bal_ex_mort": {
+      "lo": 1612.9950000000001,
+      "hi": 273536.05000000005,
+      "log": true,
+      "median": 10.423619735622419,
+      "mean": 10.356116050139189,
+      "std": 0.8898512110221493,
+      "miss_share": 0.0,
+      "flag": false
+    },
+    "total_bc_limit": {
+      "lo": 0.0,
+      "hi": 116800.0,
+      "log": true,
+      "median": 9.495594499353297,
+      "mean": 9.368466629304269,
+      "std": 1.3670780160966285,
+      "miss_share": 0.0,
+      "flag": false
+    },
+    "total_il_high_credit_limit": {
+      "lo": 0.0,
+      "hi": 233698.02500000002,
+      "log": true,
+      "median": 10.231387437026681,
+      "mean": 8.81440296685557,
+      "std": 3.7686447630897293,
+      "miss_share": 0.0,
+      "flag": false
+    }
+  },
+  "cat_params": {
+    "home_ownership": {
+      "levels": [
+        "MORTGAGE",
+        "RENT",
+        "OWN"
+      ],
+      "baseline": "MORTGAGE"
+    },
+    "verification_status": {
+      "levels": [
+        "Not Verified",
+        "Source Verified",
+        "Verified"
+      ],
+      "baseline": "Not Verified"
+    },
+    "purpose": {
+      "levels": [
+        "debt_consolidation",
+        "credit_card",
+        "home_improvement",
+        "other",
+        "major_purchase",
+        "medical",
+        "car",
+        "small_business",
+        "moving",
+        "vacation"
+      ],
+      "baseline": "debt_consolidation"
+    }
+  }
+}

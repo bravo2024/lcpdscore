@@ -1,0 +1,63 @@
+{
+  "triggers": [
+    {
+      "metric": "Score PSI (train vs current)",
+      "amber": 0.1,
+      "red": 0.25,
+      "current": 0.001162870492211629,
+      "status": "GREEN"
+    },
+    {
+      "metric": "Max input CSI",
+      "amber": 0.1,
+      "red": 0.25,
+      "current": 0.047446163391737725,
+      "status": "GREEN"
+    },
+    {
+      "metric": "Gini decline vs validation (relative)",
+      "amber": 0.1,
+      "red": 0.2,
+      "current": 0.10114293190416856,
+      "status": "AMBER"
+    },
+    {
+      "metric": "Calibration: mean predicted PD / actual",
+      "amber": "outside 0.9-1.1",
+      "red": "outside 0.8-1.25",
+      "current": 0.8433767074436748,
+      "status": "AMBER"
+    },
+    {
+      "metric": "Grades failing correlation-adjusted (Vasicek rho=0.03) test at 5% (of 8)",
+      "amber": 2,
+      "red": 4,
+      "current": 0,
+      "status": "GREEN"
+    },
+    {
+      "metric": "Portfolio calibration: Vasicek two-sided p (rho=0.03)",
+      "amber": "< 0.05",
+      "red": "< 0.01",
+      "current": 0.5448872925836349,
+      "status": "GREEN"
+    }
+  ],
+  "reference_tests": [
+    {
+      "metric": "REFERENCE (not used for the status): grades failing plain binomial test at 5% (of 8)",
+      "current": 5,
+      "status": "REFERENCE",
+      "note": "Assumes independent defaults; over-rejects when a whole vintage shares one economy."
+    },
+    {
+      "metric": "REFERENCE: grades failing Jeffreys test at 5% (of 8)",
+      "current": 5,
+      "status": "REFERENCE",
+      "note": "Bayesian, still independent."
+    }
+  ],
+  "calibration_basis": "correlation-adjusted (Vasicek single-factor, rho = 0.03; sensitivity 0.01-0.04 in calibration_rho_sensitivity.csv). The plain binomial count is a reference only.",
+  "redevelopment_policy": "Recalibrate on a fresh validation window when any metric is AMBER; redevelop and revalidate when any is RED or two are AMBER for two consecutive quarters. Review quarterly; full revalidation at least annually.",
+  "review_frequency": "monthly PSI/CSI, quarterly performance, annual validation"
+}

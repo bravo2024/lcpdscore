@@ -1,0 +1,235 @@
+{
+  "numeric": [
+    "fico",
+    "acc_open_past_24mths",
+    "annual_inc",
+    "dti",
+    "bc_open_to_buy",
+    "mths_since_recent_inq",
+    "inq_last_6mths",
+    "tot_hi_cred_lim",
+    "mo_sin_old_rev_tl_op",
+    "mort_acc",
+    "mo_sin_old_il_acct",
+    "percent_bc_gt_75",
+    "mths_since_recent_bc",
+    "bc_util",
+    "mo_sin_rcnt_rev_tl_op",
+    "loan_to_income",
+    "emp_length"
+  ],
+  "categorical": [
+    "purpose",
+    "home_ownership",
+    "verification_status"
+  ],
+  "winsor": [
+    0.005,
+    0.995
+  ],
+  "num_params": {
+    "fico": {
+      "lo": 662.0,
+      "hi": 807.0,
+      "log": false,
+      "median": 687.0,
+      "mean": 695.1347375,
+      "std": 29.64643200424906,
+      "miss_share": 0.0,
+      "flag": false
+    },
+    "acc_open_past_24mths": {
+      "lo": 0.0,
+      "hi": 15.0,
+      "log": false,
+      "median": 4.0,
+      "mean": 4.3260375,
+      "std": 2.8635768801914794,
+      "miss_share": 0.0,
+      "flag": false
+    },
+    "annual_inc": {
+      "lo": 15000.0,
+      "hi": 300000.0,
+      "log": true,
+      "median": 11.002116507732017,
+      "mean": 11.031929565865477,
+      "std": 0.5337697623520266,
+      "miss_share": 0.0,
+      "flag": false
+    },
+    "dti": {
+      "lo": 1.38,
+      "hi": 38.36,
+      "log": false,
+      "median": 17.21,
+      "mean": 17.749770724999994,
+      "std": 8.185074191128914,
+      "miss_share": 0.0,
+      "flag": false
+    },
+    "bc_open_to_buy": {
+      "lo": 0.0,
+      "hi": 83636.94999999995,
+      "log": true,
+      "median": 8.22764270790443,
+      "mean": 7.948110998451492,
+      "std": 1.9380376201942595,
+      "miss_share": 0.009735,
+      "flag": false
+    },
+    "mths_since_recent_inq": {
+      "lo": 0.0,
+      "hi": 23.0,
+      "log": false,
+      "median": 5.0,
+      "mean": 6.7358875,
+      "std": 5.616611162719391,
+      "miss_share": 0.10409,
+      "flag": true
+    },
+    "inq_last_6mths": {
+      "lo": 0.0,
+      "hi": 5.0,
+      "log": false,
+      "median": 0.0,
+      "mean": 0.6872475,
+      "std": 0.966600077345446,
+      "miss_share": 0.0,
+      "flag": false
+    },
+    "tot_hi_cred_lim": {
+      "lo": 5900.0,
+      "hi": 879443.3500000013,
+      "log": false,
+      "median": 92096.0,
+      "mean": 155671.91059249997,
+      "std": 156859.16850285968,
+      "miss_share": 0.0,
+      "flag": false
+    },
+    "mo_sin_old_rev_tl_op": {
+      "lo": 25.0,
+      "hi": 515.0,
+      "log": false,
+      "median": 164.0,
+      "mean": 181.2098725,
+      "std": 93.31783627249479,
+      "miss_share": 0.0,
+      "flag": false
+    },
+    "mort_acc": {
+      "lo": 0.0,
+      "hi": 9.0,
+      "log": false,
+      "median": 1.0,
+      "mean": 1.6371325,
+      "std": 2.0018141011614334,
+      "miss_share": 0.0,
+      "flag": false
+    },
+    "mo_sin_old_il_acct": {
+      "lo": 7.0,
+      "hi": 301.0,
+      "log": false,
+      "median": 128.0,
+      "mean": 124.8892125,
+      "std": 50.61496723615237,
+      "miss_share": 0.037885,
+      "flag": true
+    },
+    "percent_bc_gt_75": {
+      "lo": 0.0,
+      "hi": 100.0,
+      "log": false,
+      "median": 50.0,
+      "mean": 48.78235109999999,
+      "std": 35.25012294787532,
+      "miss_share": 0.0102575,
+      "flag": false
+    },
+    "mths_since_recent_bc": {
+      "lo": 0.0,
+      "hi": 169.0,
+      "log": true,
+      "median": 2.70805020110221,
+      "mean": 2.7057666141115684,
+      "std": 1.0325310636129923,
+      "miss_share": 0.00901,
+      "flag": false
+    },
+    "bc_util": {
+      "lo": 0.0,
+      "hi": 102.2,
+      "log": false,
+      "median": 67.0,
+      "mean": 63.139641999999995,
+      "std": 26.73205352229084,
+      "miss_share": 0.010405,
+      "flag": false
+    },
+    "mo_sin_rcnt_rev_tl_op": {
+      "lo": 0.0,
+      "hi": 95.0,
+      "log": true,
+      "median": 2.1972245773362196,
+      "mean": 2.205526594653959,
+      "std": 0.9308022293152369,
+      "miss_share": 0.0,
+      "flag": false
+    },
+    "loan_to_income": {
+      "lo": 0.020833333333333332,
+      "hi": 0.4796153846153846,
+      "log": false,
+      "median": 0.18333333333333332,
+      "mean": 0.19871383402966483,
+      "std": 0.10444048544427117,
+      "miss_share": 0.0,
+      "flag": false
+    },
+    "emp_length": {
+      "lo": 0.0,
+      "hi": 10.0,
+      "log": false,
+      "median": 6.0,
+      "mean": 5.9421525,
+      "std": 3.5513261884196012,
+      "miss_share": 0.0592825,
+      "flag": true
+    }
+  },
+  "cat_params": {
+    "purpose": {
+      "levels": [
+        "debt_consolidation",
+        "credit_card",
+        "home_improvement",
+        "other",
+        "major_purchase",
+        "medical",
+        "car",
+        "small_business",
+        "moving",
+        "vacation"
+      ],
+      "baseline": "debt_consolidation"
+    },
+    "home_ownership": {
+      "levels": [
+        "MORTGAGE",
+        "RENT",
+        "OWN"
+      ],
+      "baseline": "MORTGAGE"
+    },
+    "verification_status": {
+      "levels": [
+        "Not Verified",
+        "Source Verified",
+        "Verified"
+      ],
+      "baseline": "Not Verified"
+    }
+  }
+}

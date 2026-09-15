@@ -1,0 +1,8 @@
+loan_status,loans,last_payment_month_0_9,last_payment_month_10_12,last_payment_after_12,share_labelled_bad
+Fully Paid,652392,90744,40312,521336,0.0
+Charged Off,122192,31469,15351,75372,0.2575373183187115
+Current,85120,0,0,85120,0.0
+Late (31-120 days),2843,0,0,2843,0.0
+In Grace Period,1077,0,0,1077,0.0
+Late (16-30 days),571,0,0,571,0.0
+Default,8,0,0,8,0.0

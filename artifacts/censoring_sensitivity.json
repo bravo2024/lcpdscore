@@ -1,0 +1,9 @@
+{
+  "champion": "xgb_monotone",
+  "oot_bad_rate_resolved_only": 0.1984939666889556,
+  "oot_bad_rate_alt_unresolved_good_late31_bad": 0.15097333333333332,
+  "oot_auc_resolved_only": 0.6969718510685236,
+  "oot_auc_alt": 0.6888096452478426,
+  "n_alt": 150000,
+  "note": "Alternative label counts Current/In-Grace/Late(16-30) as good and Late(31-120) as bad; ranking power is similar, the bad-rate level differs a lot."
+}

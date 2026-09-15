@@ -1,0 +1,4 @@
+set,loans_in_split,dropped_for_unresolved_status_now,would_have_been_dropped_by_old_lifetime_label,old_label_drop_share
+train,438588,0,4,9.12017656661833e-06
+validation,107338,0,143,0.0013322402131584342
+OOT test,318277,0,89464,0.2810884858158145

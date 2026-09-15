@@ -1,0 +1,13 @@
+adverse_action_reason,declined_applicants_citing,share_of_declined_citing,share_as_first_reason
+Credit bureau information (score),31147,0.9215361401224889,0.3256013491523418
+Number of recently established accounts,29004,0.858131897393414,0.39740820734341253
+Purpose of the requested credit,23436,0.6933932956596349,0.21707742832628185
+Excessive obligations in relation to income,16256,0.4809609751767804,0.05115535962602444
+Number of recent inquiries on credit bureau report,14490,0.42871090860676353,0.0038166809668925116
+Income insufficient for amount of credit requested,6842,0.2024320246161129,0.0010651202698304684
+Too many accounts with balances / high utilisation of available credit,5617,0.16618834876771502,0.0036687475960827244
+Length of credit history,4108,0.12154205745732122,8.876002248587236e-05
+Insufficient credit limits or available credit,983,0.02908370070120418,0.0
+Unable to verify income,170,0.005029734607532767,0.0
+Length of employment,154,0.004556347820941448,0.0
+Housing status / length of residence,7,0.0002071067191337022,0.00011834669664782982

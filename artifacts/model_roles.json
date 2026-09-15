@@ -1,0 +1,20 @@
+{
+  "decision_model_of_record": "woe_scorecard",
+  "decision_model_rationale": "points table, reason codes and adverse-action statements; fully explainable and recomputable by hand",
+  "challenger_benchmark": "xgb_monotone",
+  "challenger_rationale": "highest application-time accuracy; wins the frozen validation rule; supplies the PD for grading and the cut-off in this repository",
+  "frozen_rule_champion": "xgb_monotone",
+  "top_numeric_features_checked": 12,
+  "constrained_among_checked": 10,
+  "constrained_pdp_exactly_monotone": 10,
+  "constrained_ale_in_expected_direction": 10,
+  "unconstrained_among_checked": 2,
+  "unconstrained_ale_in_expected_direction": 0,
+  "unconstrained_with_no_expectation": 2,
+  "features_flagged_for_review": [],
+  "promotion_conditions_for_xgb_as_decision_model": [
+    "reason codes via SHAP or scorecard surrogate accepted by compliance",
+    "monotonicity evidence above re-run on each refresh",
+    "OOT gain over the scorecard stays above the frozen 0.010 AUC margin in the rolling-origin backtest"
+  ]
+}

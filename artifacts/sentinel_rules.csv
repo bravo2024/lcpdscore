@@ -1,0 +1,3 @@
+rule,rows_affected_train
+dti < 0 or dti >= 999 set to missing,0
+annual_inc <= 0 set to missing,0

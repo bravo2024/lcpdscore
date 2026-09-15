@@ -1,0 +1,43 @@
+{
+  "condition_index": 3.6436368857984167,
+  "n_features_after_corr": 20,
+  "n_features_after_vif": 20,
+  "dropped_by_corr": [
+    [
+      "tot_cur_bal",
+      "tot_hi_cred_lim",
+      0.9320986262787913
+    ],
+    [
+      "credit_history_months",
+      "mo_sin_old_rev_tl_op",
+      0.8435361704361914
+    ],
+    [
+      "avg_cur_bal",
+      "tot_hi_cred_lim",
+      0.8431298510014396
+    ],
+    [
+      "total_rev_hi_lim",
+      "total_bc_limit",
+      0.7955345828726319
+    ],
+    [
+      "total_bc_limit",
+      "bc_open_to_buy",
+      0.7399177116271202
+    ],
+    [
+      "mo_sin_rcnt_tl",
+      "num_tl_op_past_12m",
+      0.7292137116693928
+    ],
+    [
+      "num_tl_op_past_12m",
+      "acc_open_past_24mths",
+      0.7172966881428353
+    ]
+  ],
+  "dropped_by_vif": []
+}

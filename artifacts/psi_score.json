@@ -1,0 +1,12 @@
+{
+  "champion": "xgb_monotone",
+  "psi_train_vs_valid": 0.005150386042784755,
+  "psi_train_vs_oot": 0.001162870492211629,
+  "psi_valid_vs_oot": 0.003554143803252402,
+  "mean_score_train": 590.070723929404,
+  "mean_score_valid": 590.2497327895098,
+  "mean_score_oot": 589.7224572024653,
+  "mean_pd_train": 0.03597882920738693,
+  "mean_pd_oot": 0.03658871227384404,
+  "label_train_vs_oot": "stable (<0.10)"
+}

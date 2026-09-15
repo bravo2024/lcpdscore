@@ -1,0 +1,32 @@
+{
+  "horizon_note": "realised = lifetime cash to the data cut, before funding/servicing cost; 2016 loans only partly matured; total_pymnt includes recoveries",
+  "total_pymnt_minus_components_median_abs_oot": 0.0006418229058908764,
+  "assumed": {
+    "margin_12m": 0.06,
+    "lgd": 0.85,
+    "ead": 0.9,
+    "loss_per_bad_of_principal": 0.765
+  },
+  "realised_valid": {
+    "net_return_all": 0.05907217796180303,
+    "net_return_good_loans": 0.08780167082003404,
+    "loss_on_bad_loans": 0.7230678286607718
+  },
+  "realised_oot": {
+    "net_return_all": 0.011505291513729178,
+    "net_return_good_loans": 0.04673876201060116,
+    "loss_on_bad_loans": 0.7284355514224752
+  },
+  "realised_ead_share_bad_loans": 0.8716050801232407,
+  "realised_lgd_on_ead_bad_loans": 0.9070635315205056,
+  "realised_loss_per_dollar_funded_bad": 0.7273102596283378,
+  "assumed_cutoff_pd": 0.07085777569700538,
+  "realised_best_cutoff_pd_valid": 0.08395343928124796,
+  "realised_best_cutoff_pd_oot": 0.04508320354627303,
+  "approval_at_assumed_cutoff_oot": 0.8929768723470436,
+  "realised_profit_per_app_at_assumed_cutoff_oot": 209.94318058926228,
+  "realised_profit_per_app_approve_all_oot": 145.89275872238207,
+  "realised_best_profit_per_app_oot": 228.4649826834101,
+  "realised_profit_per_app_at_assumed_cutoff_valid": 771.0776226633594,
+  "realised_profit_per_app_approve_all_valid": 755.7884881883947
+}

@@ -1,0 +1,20 @@
+{
+  "champion": "xgb_monotone",
+  "calibrators_longrun_moc10": {
+    "xgb_monotone": {
+      "a": 0.16368561820553534,
+      "b": 1.0098553143958697,
+      "shift_vs_validation_platt": -0.01614355575621524,
+      "target_pd": 0.03558559218648682,
+      "moc_rel": 0.1
+    },
+    "woe_scorecard": {
+      "a": 0.0005881219997192419,
+      "b": 0.9590348899066856,
+      "shift_vs_validation_platt": -0.02230767832377481,
+      "target_pd": 0.03558559218648682,
+      "moc_rel": 0.1
+    }
+  },
+  "moc_rel": 0.1
+}

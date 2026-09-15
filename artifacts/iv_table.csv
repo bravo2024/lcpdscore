@@ -1,0 +1,63 @@
+feature,label,group,iv_fine,iv_coarse,n_bins,has_missing_bin,monotone,optbinning_ok,strength,decision
+fico,FICO score at application,Bureau,0.11806810817660142,0.11154682752127654,6,False,True,True,medium,keep
+acc_open_past_24mths,Accounts opened in past 24 months,Bureau,0.09174461962665428,0.09106807465150618,6,False,True,True,weak,keep
+num_tl_op_past_12m,Accounts opened in past 12 months,Bureau,0.08397806358717036,0.08397806358717036,6,False,True,True,weak,keep
+annual_inc,Annual income ($),Applicant,0.07585251634207887,0.0738932523151271,6,False,True,True,weak,keep
+dti,Debt-to-income ratio (%),Applicant,0.07482568073114375,0.0734160093261821,6,False,True,True,weak,keep
+bc_open_to_buy,Open-to-buy on bankcards ($),Bureau,0.0721176543660588,0.07183231502331346,6,True,True,True,weak,keep
+mths_since_recent_inq,Months since latest enquiry,Bureau,0.06849189465553342,0.06770869183675302,6,True,True,True,weak,keep
+inq_last_6mths,Credit enquiries in last 6 months,Bureau,0.06694018371015024,0.06694018371015024,4,False,True,True,weak,keep
+tot_hi_cred_lim,Total highest credit limit ($),Bureau,0.06512576053293095,0.06356771629981525,6,False,True,True,weak,keep
+mo_sin_rcnt_tl,Months since newest account,Bureau,0.06413004491630339,0.061457378794090856,6,False,True,True,weak,keep
+total_bc_limit,Total bankcard limit ($),Bureau,0.057358957727747906,0.056331475700574764,6,False,True,True,weak,keep
+avg_cur_bal,Average balance per account ($),Bureau,0.05678313243206237,0.05610606442763791,6,True,True,True,weak,keep
+tot_cur_bal,"Total current balance, all accounts ($)",Bureau,0.05215825382673409,0.05130719197991691,6,False,False,True,weak,keep
+purpose,Loan purpose,Applicant,0.05577458143009655,0.04931084177533956,5,True,True,True,weak,keep
+mo_sin_old_rev_tl_op,Months since oldest revolving account,Bureau,0.047408043255130324,0.046140762098859714,6,False,True,True,weak,keep
+total_rev_hi_lim,Total revolving credit limit ($),Bureau,0.048056812970947445,0.04557577413864909,6,False,True,True,weak,keep
+home_ownership,Home ownership,Applicant,0.0440166175465002,0.0440166175465002,4,False,True,True,weak,keep
+mort_acc,Mortgage accounts,Bureau,0.04096745216336158,0.04083042187007479,6,False,True,True,weak,keep
+mo_sin_old_il_acct,Months since oldest instalment account,Bureau,0.03983660237577265,0.03903459232483683,6,True,True,True,weak,keep
+credit_history_months,Credit history length (months),Bureau,0.03787265742840098,0.0380208221768327,6,False,True,True,weak,keep
+percent_bc_gt_75,% of bankcards over 75% used,Bureau,0.035179001176965125,0.03549921231503073,6,True,True,True,weak,keep
+mths_since_recent_bc,Months since newest bankcard,Bureau,0.03551097858273311,0.03436790014197495,6,True,True,True,weak,keep
+bc_util,Bankcard utilisation (%),Bureau,0.035775170267472595,0.033983232548942435,6,True,False,True,weak,keep
+mo_sin_rcnt_rev_tl_op,Months since newest revolving account,Bureau,0.03260782169920127,0.03137967493151584,6,False,True,True,weak,keep
+verification_status,Income verification,Applicant,0.029852971106987092,0.029852971106987092,3,False,True,True,weak,keep
+loan_to_income,Loan amount / annual income,Loan,0.028215301448420434,0.02692555371498104,6,False,False,True,weak,keep
+emp_length,Employment length (years),Applicant,0.02619123043574552,0.024509665440526057,4,True,True,True,weak,keep
+loan_amnt,Loan amount requested ($),Loan,0.023792139648219073,0.019850789132719822,6,False,False,True,useless (<0.02),drop: IV < 0.02
+revol_bal,Revolving balance ($),Bureau,0.01874687150665424,0.017953452876648398,6,False,True,True,useless (<0.02),drop: IV < 0.02
+revol_util,Revolving utilisation (%),Bureau,0.01838621436667008,0.016627619951494328,6,True,False,True,useless (<0.02),drop: IV < 0.02
+num_bc_tl,Bankcard accounts,Bureau,0.012153953072024772,0.010402115592571821,6,False,False,True,useless (<0.02),drop: IV < 0.02
+total_acc,Total credit lines ever,Bureau,0.010775608386657727,0.010061453968758087,6,False,True,True,useless (<0.02),drop: IV < 0.02
+total_il_high_credit_limit,Total instalment high credit limit ($),Bureau,0.009661905514997973,0.009491639270280504,6,False,False,True,useless (<0.02),drop: IV < 0.02
+num_rev_accts,Revolving accounts,Bureau,0.007400646831988172,0.006627182154018186,6,False,False,True,useless (<0.02),drop: IV < 0.02
+num_bc_sats,Satisfactory bankcard accounts,Bureau,0.005392604926035618,0.005222611158688411,4,False,True,True,useless (<0.02),drop: IV < 0.02
+total_bal_ex_mort,Total balance excluding mortgage ($),Bureau,0.004825843046410858,0.004306861965404317,6,False,False,True,useless (<0.02),drop: IV < 0.02
+num_actv_bc_tl,Active bankcard accounts,Bureau,0.005394138616353068,0.0037725935296943187,5,False,False,True,useless (<0.02),drop: IV < 0.02
+mths_since_last_delinq,Months since last delinquency,Bureau,0.005134216383431624,0.0036550038351162483,4,True,False,True,useless (<0.02),drop: IV < 0.02
+pct_tl_nvr_dlq,% of accounts never delinquent,Bureau,0.0037918549487168645,0.0026804398368653584,5,True,False,True,useless (<0.02),drop: IV < 0.02
+mths_since_recent_bc_dlq,Months since bankcard delinquency,Bureau,0.003452695868489634,0.002567954117863878,4,True,True,True,useless (<0.02),drop: IV < 0.02
+num_il_tl,Instalment accounts,Bureau,0.0035888523465609557,0.002044919910890744,6,False,False,True,useless (<0.02),drop: IV < 0.02
+num_actv_rev_tl,Active revolving accounts,Bureau,0.00283184328242157,0.0017783558790592118,5,False,False,True,useless (<0.02),drop: IV < 0.02
+mths_since_last_record,Months since last public record,Bureau,0.0046741773111478,0.0017705865408296818,3,True,True,True,useless (<0.02),drop: IV < 0.02
+num_rev_tl_bal_gt_0,Revolving accounts with a balance,Bureau,0.003341157002881811,0.0017700173467492825,4,False,False,True,useless (<0.02),drop: IV < 0.02
+open_acc,Open credit lines,Bureau,0.0026153500788668993,0.0014138645112288502,6,False,False,True,useless (<0.02),drop: IV < 0.02
+num_sats,Satisfactory accounts,Bureau,0.0021833237657784207,0.0013714454136085396,6,False,False,True,useless (<0.02),drop: IV < 0.02
+num_op_rev_tl,Open revolving accounts,Bureau,0.002521634836583698,0.0013138440967465827,6,False,False,True,useless (<0.02),drop: IV < 0.02
+mths_since_recent_revol_delinq,Months since revolving delinquency,Bureau,0.0024126450204444666,0.0012685140750678153,4,True,False,True,useless (<0.02),drop: IV < 0.02
+delinq_2yrs,Delinquencies in last 2 years,Bureau,0.001084045907518864,0.001084045907518864,3,False,True,True,useless (<0.02),drop: IV < 0.02
+mths_since_last_major_derog,Months since last major derogatory,Bureau,0.002920899035232055,0.0009507884913223728,4,True,False,True,useless (<0.02),drop: IV < 0.02
+num_tl_90g_dpd_24m,Accounts 90+ dpd in last 24 months,Bureau,0.0007088850554148738,0.0007088850554148738,2,False,True,True,useless (<0.02),drop: IV < 0.02
+pub_rec,Public records,Bureau,0.0006717803567387135,0.0006717803567387135,2,False,True,True,useless (<0.02),drop: IV < 0.02
+num_accts_ever_120_pd,Accounts ever 120+ days past due,Bureau,0.0005431718515446147,0.0005431718515446147,4,False,False,True,useless (<0.02),drop: IV < 0.02
+pub_rec_bankruptcies,Public-record bankruptcies,Bureau,0.00035460915156023944,0.00035460915156023944,2,False,True,True,useless (<0.02),drop: IV < 0.02
+num_tl_120dpd_2m,Accounts 120+ dpd in last 2 months,Bureau,0.0002887024109703409,0.0002887024109703409,2,True,True,False,useless (<0.02),drop: IV < 0.02
+tot_coll_amt,Total collection amount ever ($),Bureau,3.8006562155720805e-06,0.0001261757490039983,3,False,False,True,useless (<0.02),drop: IV < 0.02
+collections_12_mths_ex_med,Collections in last 12 months,Bureau,0.0,0.0,2,False,True,False,useless (<0.02),drop: IV < 0.02
+acc_now_delinq,Accounts currently delinquent,Bureau,0.0,0.0,2,False,True,False,useless (<0.02),drop: IV < 0.02
+chargeoff_within_12_mths,Charge-offs in last 12 months,Bureau,0.0,0.0,2,False,True,False,useless (<0.02),drop: IV < 0.02
+delinq_amnt,Past-due amount owed ($),Bureau,0.0,0.0,2,False,True,False,useless (<0.02),drop: IV < 0.02
+num_tl_30dpd,Accounts 30 dpd now,Bureau,0.0,0.0,2,False,True,False,useless (<0.02),drop: IV < 0.02
+tax_liens,Tax liens,Bureau,0.0,0.0,2,False,True,False,useless (<0.02),drop: IV < 0.02

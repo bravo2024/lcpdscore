@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Local runs
+app_run.log
+*.bak_*
+.env
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Kaggle working files
+kaggle/

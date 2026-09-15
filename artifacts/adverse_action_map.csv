@@ -1,0 +1,19 @@
+variable,label,plain_english_phrase,adverse_action_statement,mapped
+fico,FICO score at application,Credit score (FICO) is lower than the best-scoring applicants,Credit bureau information (score),True
+acc_open_past_24mths,Accounts opened in past 24 months,Many new accounts opened recently,Number of recently established accounts,True
+annual_inc,Annual income ($),Annual income is lower,Income insufficient for amount of credit requested,True
+dti,Debt-to-income ratio (%),Debts are high relative to income,Excessive obligations in relation to income,True
+bc_open_to_buy,Open-to-buy on bankcards ($),Open-to-buy on bankcards ($) is less favourable than the best-scoring applicants,Insufficient credit limits or available credit,True
+mths_since_recent_inq,Months since latest enquiry,A very recent credit enquiry,Number of recent inquiries on credit bureau report,True
+inq_last_6mths,Credit enquiries in last 6 months,Several recent credit enquiries,Number of recent inquiries on credit bureau report,True
+tot_hi_cred_lim,Total highest credit limit ($),Total highest credit limit ($) is less favourable than the best-scoring applicants,Insufficient credit limits or available credit,True
+purpose,Loan purpose,Loan purpose carries higher historical risk,Purpose of the requested credit,True
+mo_sin_old_rev_tl_op,Months since oldest revolving account,Newer oldest revolving account,Length of credit history,True
+home_ownership,Home ownership,Home-ownership status carries higher historical risk,Housing status / length of residence,True
+mo_sin_old_il_acct,Months since oldest instalment account,Months since oldest instalment account is less favourable than the best-scoring applicants,Length of credit history,True
+percent_bc_gt_75,% of bankcards over 75% used,% of bankcards over 75% used is less favourable than the best-scoring applicants,Too many accounts with balances / high utilisation of available credit,True
+mths_since_recent_bc,Months since newest bankcard,Months since newest bankcard is less favourable than the best-scoring applicants,Number of recently established accounts,True
+bc_util,Bankcard utilisation (%),Bankcards are heavily used (high utilisation),Too many accounts with balances / high utilisation of available credit,True
+verification_status,Income verification,Income verification status carries higher historical risk,Unable to verify income,True
+loan_to_income,Loan amount / annual income,Loan is large relative to income,Income insufficient for amount of credit requested,True
+emp_length,Employment length (years),Shorter employment history,Length of employment,True

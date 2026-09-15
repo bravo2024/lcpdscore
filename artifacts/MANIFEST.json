@@ -1,0 +1,545 @@
+{
+  "files": [
+    {
+      "file": "accept_share_by_band.csv",
+      "kb": 4.5
+    },
+    {
+      "file": "adverse_action_map.csv",
+      "kb": 2.5
+    },
+    {
+      "file": "adverse_action_reasons_declined.csv",
+      "kb": 1.0
+    },
+    {
+      "file": "applicant_examples.json",
+      "kb": 25.9
+    },
+    {
+      "file": "bad_rate_by_vintage.csv",
+      "kb": 0.7
+    },
+    {
+      "file": "bootstrap_valid_candidates.csv",
+      "kb": 0.4
+    },
+    {
+      "file": "calibration_longrun.json",
+      "kb": 1.3
+    },
+    {
+      "file": "calibration_longrun_by_grade.csv",
+      "kb": 0.9
+    },
+    {
+      "file": "calibration_longrun_oot.csv",
+      "kb": 2.0
+    },
+    {
+      "file": "calibration_rho_sensitivity.csv",
+      "kb": 0.1
+    },
+    {
+      "file": "calibration_tests.json",
+      "kb": 2.5
+    },
+    {
+      "file": "calibrators.json",
+      "kb": 0.7
+    },
+    {
+      "file": "calibrators_longrun.json",
+      "kb": 0.5
+    },
+    {
+      "file": "cap_points.csv",
+      "kb": 39.9
+    },
+    {
+      "file": "champion_rule.json",
+      "kb": 1.0
+    },
+    {
+      "file": "charged_off_lastpay_month_distribution.csv",
+      "kb": 2.0
+    },
+    {
+      "file": "coef_stability.csv",
+      "kb": 2.7
+    },
+    {
+      "file": "corr_matrix_woe.csv",
+      "kb": 8.3
+    },
+    {
+      "file": "corr_pairs_gt_0_7.csv",
+      "kb": 0.8
+    },
+    {
+      "file": "csi.csv",
+      "kb": 6.3
+    },
+    {
+      "file": "cutoff.json",
+      "kb": 1.0
+    },
+    {
+      "file": "cutoff_curve_oot.csv",
+      "kb": 32.2
+    },
+    {
+      "file": "cutoff_curve_valid.csv",
+      "kb": 32.0
+    },
+    {
+      "file": "cutoff_sensitivity.csv",
+      "kb": 1.8
+    },
+    {
+      "file": "default_definition_sensitivity.csv",
+      "kb": 0.7
+    },
+    {
+      "file": "default_reconciliation.json",
+      "kb": 1.1
+    },
+    {
+      "file": "discrimination_ci.csv",
+      "kb": 1.7
+    },
+    {
+      "file": "drift_by_quarter.csv",
+      "kb": 1.2
+    },
+    {
+      "file": "dropped_by_split.csv",
+      "kb": 0.2
+    },
+    {
+      "file": "elasticnet_model.json",
+      "kb": 1.6
+    },
+    {
+      "file": "environment.json",
+      "kb": 0.3
+    },
+    {
+      "file": "fairness.json",
+      "kb": 0.6
+    },
+    {
+      "file": "fairness_income_bands.csv",
+      "kb": 1.1
+    },
+    {
+      "file": "fairness_income_by_grade.csv",
+      "kb": 0.3
+    },
+    {
+      "file": "feature_dictionary.csv",
+      "kb": 3.6
+    },
+    {
+      "file": "feature_schema.json",
+      "kb": 13.8
+    },
+    {
+      "file": "figure_captions.json",
+      "kb": 6.3
+    },
+    {
+      "file": "figures/bad_rate_by_vintage.png",
+      "kb": 48.9
+    },
+    {
+      "file": "figures/calibration_longrun.png",
+      "kb": 37.5
+    },
+    {
+      "file": "figures/calibration_scorecard_valid.png",
+      "kb": 42.8
+    },
+    {
+      "file": "figures/cap_curve.png",
+      "kb": 79.1
+    },
+    {
+      "file": "figures/chargeoff_lastpay_month.png",
+      "kb": 37.0
+    },
+    {
+      "file": "figures/coef_stability.png",
+      "kb": 60.0
+    },
+    {
+      "file": "figures/corr_heatmap.png",
+      "kb": 77.3
+    },
+    {
+      "file": "figures/cutoff_profit.png",
+      "kb": 49.8
+    },
+    {
+      "file": "figures/drift_by_quarter.png",
+      "kb": 62.0
+    },
+    {
+      "file": "figures/fairness_income.png",
+      "kb": 43.2
+    },
+    {
+      "file": "figures/grade_pd_vs_actual.png",
+      "kb": 26.8
+    },
+    {
+      "file": "figures/imbalance_comparison.png",
+      "kb": 37.0
+    },
+    {
+      "file": "figures/iv_bar.png",
+      "kb": 86.5
+    },
+    {
+      "file": "figures/ks_curve.png",
+      "kb": 51.6
+    },
+    {
+      "file": "figures/ladder_coefficients.png",
+      "kb": 70.4
+    },
+    {
+      "file": "figures/lift_gains.png",
+      "kb": 55.5
+    },
+    {
+      "file": "figures/missingness.png",
+      "kb": 58.4
+    },
+    {
+      "file": "figures/odds_ratio_forest.png",
+      "kb": 87.2
+    },
+    {
+      "file": "figures/pdp_ale_top_features.png",
+      "kb": 172.6
+    },
+    {
+      "file": "figures/psi_bar.png",
+      "kb": 57.9
+    },
+    {
+      "file": "figures/realised_economics.png",
+      "kb": 75.6
+    },
+    {
+      "file": "figures/reject_vs_accepted.png",
+      "kb": 57.5
+    },
+    {
+      "file": "figures/reliability_oot.png",
+      "kb": 65.5
+    },
+    {
+      "file": "figures/roc_pr_oot.png",
+      "kb": 91.0
+    },
+    {
+      "file": "figures/rolling_origin.png",
+      "kb": 70.0
+    },
+    {
+      "file": "figures/score_distribution.png",
+      "kb": 39.5
+    },
+    {
+      "file": "figures/shap_beeswarm.png",
+      "kb": 166.6
+    },
+    {
+      "file": "figures/shap_waterfall.png",
+      "kb": 82.9
+    },
+    {
+      "file": "figures/vif_bar.png",
+      "kb": 63.0
+    },
+    {
+      "file": "figures/vintage_curves.png",
+      "kb": 83.0
+    },
+    {
+      "file": "figures/woe_bins_top6.png",
+      "kb": 168.7
+    },
+    {
+      "file": "hosmer_lemeshow_valid.json",
+      "kb": 0.6
+    },
+    {
+      "file": "imbalance_cv.csv",
+      "kb": 0.3
+    },
+    {
+      "file": "iv_table.csv",
+      "kb": 8.0
+    },
+    {
+      "file": "ks_points.csv",
+      "kb": 17.2
+    },
+    {
+      "file": "label_sensitivity.json",
+      "kb": 1.0
+    },
+    {
+      "file": "ladder_coefficients.csv",
+      "kb": 3.3
+    },
+    {
+      "file": "ladder_metrics_valid.csv",
+      "kb": 0.9
+    },
+    {
+      "file": "lcpd_lib.py",
+      "kb": 45.3
+    },
+    {
+      "file": "leakage_audit.csv",
+      "kb": 14.5
+    },
+    {
+      "file": "lift_deciles.csv",
+      "kb": 1.1
+    },
+    {
+      "file": "loan_status_by_year.csv",
+      "kb": 0.2
+    },
+    {
+      "file": "lr_ladder_cv.csv",
+      "kb": 1.1
+    },
+    {
+      "file": "master_scale.csv",
+      "kb": 3.5
+    },
+    {
+      "file": "master_scale.json",
+      "kb": 0.5
+    },
+    {
+      "file": "metrics.json",
+      "kb": 27.3
+    },
+    {
+      "file": "missingness.csv",
+      "kb": 4.0
+    },
+    {
+      "file": "model_comparison.csv",
+      "kb": 3.5
+    },
+    {
+      "file": "model_metrics_valid.csv",
+      "kb": 2.0
+    },
+    {
+      "file": "model_roles.json",
+      "kb": 1.0
+    },
+    {
+      "file": "models/logistic_ladder.joblib",
+      "kb": 38.1
+    },
+    {
+      "file": "models/xgb_monotone.joblib",
+      "kb": 483.8
+    },
+    {
+      "file": "models/xgb_monotone.json",
+      "kb": 537.7
+    },
+    {
+      "file": "models/xgb_tuned.joblib",
+      "kb": 495.6
+    },
+    {
+      "file": "models/xgb_tuned.json",
+      "kb": 558.2
+    },
+    {
+      "file": "monitoring_triggers.json",
+      "kb": 2.0
+    },
+    {
+      "file": "monotone_constraints.csv",
+      "kb": 1.4
+    },
+    {
+      "file": "multicollinearity.json",
+      "kb": 0.8
+    },
+    {
+      "file": "oot_scored.csv.gz",
+      "kb": 31190.6
+    },
+    {
+      "file": "outlier_caps.csv",
+      "kb": 2.9
+    },
+    {
+      "file": "pdp_ale_curves.csv",
+      "kb": 12.4
+    },
+    {
+      "file": "pdp_ale_monotonicity.csv",
+      "kb": 2.0
+    },
+    {
+      "file": "points_table.csv",
+      "kb": 14.6
+    },
+    {
+      "file": "population_waterfall.csv",
+      "kb": 0.4
+    },
+    {
+      "file": "pr_points.csv",
+      "kb": 60.9
+    },
+    {
+      "file": "psi_score.json",
+      "kb": 0.4
+    },
+    {
+      "file": "raw_prep.json",
+      "kb": 4.9
+    },
+    {
+      "file": "realised_cutoff_curve_oot.csv",
+      "kb": 23.2
+    },
+    {
+      "file": "realised_cutoff_curve_valid.csv",
+      "kb": 22.8
+    },
+    {
+      "file": "realised_economics.json",
+      "kb": 1.4
+    },
+    {
+      "file": "realised_economics_by_grade.csv",
+      "kb": 3.3
+    },
+    {
+      "file": "reject_parcelling_sensitivity.csv",
+      "kb": 1.4
+    },
+    {
+      "file": "reject_vs_accepted_distributions.csv",
+      "kb": 2.6
+    },
+    {
+      "file": "reliability_oot.csv",
+      "kb": 1.9
+    },
+    {
+      "file": "roc_points.csv",
+      "kb": 60.4
+    },
+    {
+      "file": "rolling_origin_backtest.csv",
+      "kb": 1.3
+    },
+    {
+      "file": "rolling_origin_summary.json",
+      "kb": 3.1
+    },
+    {
+      "file": "score_to_pd_scorecardscale.csv",
+      "kb": 1.0
+    },
+    {
+      "file": "scorecard.json",
+      "kb": 108.9
+    },
+    {
+      "file": "scorecard_logit.csv",
+      "kb": 2.2
+    },
+    {
+      "file": "scorecard_meta.json",
+      "kb": 0.6
+    },
+    {
+      "file": "sentinel_rules.csv",
+      "kb": 0.1
+    },
+    {
+      "file": "shap_importance.csv",
+      "kb": 2.9
+    },
+    {
+      "file": "sign_check.csv",
+      "kb": 6.2
+    },
+    {
+      "file": "split_summary.csv",
+      "kb": 0.2
+    },
+    {
+      "file": "statsmodels_convergence.json",
+      "kb": 0.2
+    },
+    {
+      "file": "statsmodels_logit_raw.csv",
+      "kb": 5.2
+    },
+    {
+      "file": "status_transition_by_vintage.csv",
+      "kb": 0.5
+    },
+    {
+      "file": "status_vs_bad_class.csv",
+      "kb": 0.3
+    },
+    {
+      "file": "tree_features.json",
+      "kb": 2.3
+    },
+    {
+      "file": "tree_prep.json",
+      "kb": 14.9
+    },
+    {
+      "file": "valid_scored.csv.gz",
+      "kb": 907.3
+    },
+    {
+      "file": "vif_final.csv",
+      "kb": 1.1
+    },
+    {
+      "file": "vif_iterations.csv",
+      "kb": 0.0
+    },
+    {
+      "file": "vintage_curves.csv",
+      "kb": 5.4
+    },
+    {
+      "file": "woe_bins.csv",
+      "kb": 33.6
+    },
+    {
+      "file": "xgb_best_params.json",
+      "kb": 0.2
+    },
+    {
+      "file": "xgb_search.csv",
+      "kb": 0.9
+    }
+  ],
+  "n_files": 135
+}

@@ -1,0 +1,635 @@
+{
+  "loan_amnt": {
+    "kind": "num",
+    "label": "Loan amount requested ($)",
+    "group": "Loan",
+    "default": 10000.0,
+    "min": 1200.0,
+    "max": 35000.0,
+    "missing_share": 0.0,
+    "in_scorecard": false
+  },
+  "emp_length": {
+    "kind": "num",
+    "label": "Employment length (years)",
+    "group": "Applicant",
+    "default": 6.0,
+    "min": 0.0,
+    "max": 10.0,
+    "missing_share": 0.0592825,
+    "in_scorecard": true
+  },
+  "annual_inc": {
+    "kind": "num",
+    "label": "Annual income ($)",
+    "group": "Applicant",
+    "default": 60000.0,
+    "min": 15000.0,
+    "max": 300000.0,
+    "missing_share": 0.0,
+    "in_scorecard": true
+  },
+  "dti": {
+    "kind": "num",
+    "label": "Debt-to-income ratio (%)",
+    "group": "Applicant",
+    "default": 17.21,
+    "min": 1.38,
+    "max": 38.36,
+    "missing_share": 0.0,
+    "in_scorecard": true
+  },
+  "loan_to_income": {
+    "kind": "num",
+    "label": "Loan amount / annual income",
+    "group": "Loan",
+    "default": 0.18333333333333332,
+    "min": 0.020833333333333332,
+    "max": 0.4796153846153846,
+    "missing_share": 0.0,
+    "in_scorecard": true
+  },
+  "fico": {
+    "kind": "num",
+    "label": "FICO score at application",
+    "group": "Bureau",
+    "default": 687.0,
+    "min": 662.0,
+    "max": 807.0,
+    "missing_share": 0.0,
+    "in_scorecard": true
+  },
+  "credit_history_months": {
+    "kind": "num",
+    "label": "Credit history length (months)",
+    "group": "Bureau",
+    "default": 177.0,
+    "min": 42.0,
+    "max": 519.0,
+    "missing_share": 0.0,
+    "in_scorecard": false
+  },
+  "delinq_2yrs": {
+    "kind": "num",
+    "label": "Delinquencies in last 2 years",
+    "group": "Bureau",
+    "default": 0.0,
+    "min": 0.0,
+    "max": 5.0,
+    "missing_share": 0.0,
+    "in_scorecard": false
+  },
+  "inq_last_6mths": {
+    "kind": "num",
+    "label": "Credit enquiries in last 6 months",
+    "group": "Bureau",
+    "default": 0.0,
+    "min": 0.0,
+    "max": 5.0,
+    "missing_share": 0.0,
+    "in_scorecard": true
+  },
+  "mths_since_last_delinq": {
+    "kind": "num",
+    "label": "Months since last delinquency",
+    "group": "Bureau",
+    "default": 31.0,
+    "min": 1.0,
+    "max": 81.0,
+    "missing_share": 0.5018875,
+    "in_scorecard": false
+  },
+  "mths_since_last_record": {
+    "kind": "num",
+    "label": "Months since last public record",
+    "group": "Bureau",
+    "default": 70.0,
+    "min": 6.0,
+    "max": 119.0,
+    "missing_share": 0.8257575,
+    "in_scorecard": false
+  },
+  "mths_since_last_major_derog": {
+    "kind": "num",
+    "label": "Months since last major derogatory",
+    "group": "Bureau",
+    "default": 43.0,
+    "min": 2.0,
+    "max": 84.0,
+    "missing_share": 0.7233475,
+    "in_scorecard": false
+  },
+  "open_acc": {
+    "kind": "num",
+    "label": "Open credit lines",
+    "group": "Bureau",
+    "default": 10.0,
+    "min": 3.0,
+    "max": 31.0,
+    "missing_share": 0.0,
+    "in_scorecard": false
+  },
+  "pub_rec": {
+    "kind": "num",
+    "label": "Public records",
+    "group": "Bureau",
+    "default": 0.0,
+    "min": 0.0,
+    "max": 3.0,
+    "missing_share": 0.0,
+    "in_scorecard": false
+  },
+  "revol_bal": {
+    "kind": "num",
+    "label": "Revolving balance ($)",
+    "group": "Bureau",
+    "default": 10729.0,
+    "min": 121.0,
+    "max": 125482.005,
+    "missing_share": 0.0,
+    "in_scorecard": false
+  },
+  "revol_util": {
+    "kind": "num",
+    "label": "Revolving utilisation (%)",
+    "group": "Bureau",
+    "default": 54.9,
+    "min": 0.9,
+    "max": 99.6,
+    "missing_share": 0.0004975,
+    "in_scorecard": false
+  },
+  "total_acc": {
+    "kind": "num",
+    "label": "Total credit lines ever",
+    "group": "Bureau",
+    "default": 23.0,
+    "min": 5.0,
+    "max": 63.0,
+    "missing_share": 0.0,
+    "in_scorecard": false
+  },
+  "collections_12_mths_ex_med": {
+    "kind": "num",
+    "label": "Collections in last 12 months",
+    "group": "Bureau",
+    "default": 0.0,
+    "min": 0.0,
+    "max": 1.0,
+    "missing_share": 0.0,
+    "in_scorecard": false
+  },
+  "acc_now_delinq": {
+    "kind": "num",
+    "label": "Accounts currently delinquent",
+    "group": "Bureau",
+    "default": 0.0,
+    "min": 0.0,
+    "max": 0.0,
+    "missing_share": 0.0,
+    "in_scorecard": false
+  },
+  "tot_coll_amt": {
+    "kind": "num",
+    "label": "Total collection amount ever ($)",
+    "group": "Bureau",
+    "default": 0.0,
+    "min": 0.0,
+    "max": 9120.020000000019,
+    "missing_share": 0.0,
+    "in_scorecard": false
+  },
+  "tot_cur_bal": {
+    "kind": "num",
+    "label": "Total current balance, all accounts ($)",
+    "group": "Bureau",
+    "default": 64067.0,
+    "min": 2130.0,
+    "max": 777302.0950000001,
+    "missing_share": 0.0,
+    "in_scorecard": false
+  },
+  "total_rev_hi_lim": {
+    "kind": "num",
+    "label": "Total revolving credit limit ($)",
+    "group": "Bureau",
+    "default": 21600.0,
+    "min": 2000.0,
+    "max": 186700.13000000012,
+    "missing_share": 0.0,
+    "in_scorecard": false
+  },
+  "acc_open_past_24mths": {
+    "kind": "num",
+    "label": "Accounts opened in past 24 months",
+    "group": "Bureau",
+    "default": 4.0,
+    "min": 0.0,
+    "max": 15.0,
+    "missing_share": 0.0,
+    "in_scorecard": true
+  },
+  "avg_cur_bal": {
+    "kind": "num",
+    "label": "Average balance per account ($)",
+    "group": "Bureau",
+    "default": 6222.0,
+    "min": 333.0,
+    "max": 87587.99999999953,
+    "missing_share": 2.25e-05,
+    "in_scorecard": false
+  },
+  "bc_open_to_buy": {
+    "kind": "num",
+    "label": "Open-to-buy on bankcards ($)",
+    "group": "Bureau",
+    "default": 3742.0,
+    "min": 0.0,
+    "max": 83636.94999999995,
+    "missing_share": 0.009735,
+    "in_scorecard": true
+  },
+  "bc_util": {
+    "kind": "num",
+    "label": "Bankcard utilisation (%)",
+    "group": "Bureau",
+    "default": 67.0,
+    "min": 0.0,
+    "max": 102.2,
+    "missing_share": 0.010405,
+    "in_scorecard": true
+  },
+  "chargeoff_within_12_mths": {
+    "kind": "num",
+    "label": "Charge-offs in last 12 months",
+    "group": "Bureau",
+    "default": 0.0,
+    "min": 0.0,
+    "max": 1.0,
+    "missing_share": 0.0,
+    "in_scorecard": false
+  },
+  "delinq_amnt": {
+    "kind": "num",
+    "label": "Past-due amount owed ($)",
+    "group": "Bureau",
+    "default": 0.0,
+    "min": 0.0,
+    "max": 0.0,
+    "missing_share": 0.0,
+    "in_scorecard": false
+  },
+  "mo_sin_old_il_acct": {
+    "kind": "num",
+    "label": "Months since oldest instalment account",
+    "group": "Bureau",
+    "default": 128.0,
+    "min": 7.0,
+    "max": 301.0,
+    "missing_share": 0.037885,
+    "in_scorecard": true
+  },
+  "mo_sin_old_rev_tl_op": {
+    "kind": "num",
+    "label": "Months since oldest revolving account",
+    "group": "Bureau",
+    "default": 164.0,
+    "min": 25.0,
+    "max": 515.0,
+    "missing_share": 0.0,
+    "in_scorecard": true
+  },
+  "mo_sin_rcnt_rev_tl_op": {
+    "kind": "num",
+    "label": "Months since newest revolving account",
+    "group": "Bureau",
+    "default": 8.0,
+    "min": 0.0,
+    "max": 95.0,
+    "missing_share": 0.0,
+    "in_scorecard": false
+  },
+  "mo_sin_rcnt_tl": {
+    "kind": "num",
+    "label": "Months since newest account",
+    "group": "Bureau",
+    "default": 6.0,
+    "min": 0.0,
+    "max": 61.0,
+    "missing_share": 0.0,
+    "in_scorecard": false
+  },
+  "mort_acc": {
+    "kind": "num",
+    "label": "Mortgage accounts",
+    "group": "Bureau",
+    "default": 1.0,
+    "min": 0.0,
+    "max": 9.0,
+    "missing_share": 0.0,
+    "in_scorecard": false
+  },
+  "mths_since_recent_bc": {
+    "kind": "num",
+    "label": "Months since newest bankcard",
+    "group": "Bureau",
+    "default": 14.0,
+    "min": 0.0,
+    "max": 169.0,
+    "missing_share": 0.00901,
+    "in_scorecard": true
+  },
+  "mths_since_recent_bc_dlq": {
+    "kind": "num",
+    "label": "Months since bankcard delinquency",
+    "group": "Bureau",
+    "default": 39.0,
+    "min": 1.0,
+    "max": 83.0,
+    "missing_share": 0.742795,
+    "in_scorecard": false
+  },
+  "mths_since_recent_inq": {
+    "kind": "num",
+    "label": "Months since latest enquiry",
+    "group": "Bureau",
+    "default": 5.0,
+    "min": 0.0,
+    "max": 23.0,
+    "missing_share": 0.10409,
+    "in_scorecard": true
+  },
+  "mths_since_recent_revol_delinq": {
+    "kind": "num",
+    "label": "Months since revolving delinquency",
+    "group": "Bureau",
+    "default": 33.0,
+    "min": 1.0,
+    "max": 82.0,
+    "missing_share": 0.6480275,
+    "in_scorecard": false
+  },
+  "num_accts_ever_120_pd": {
+    "kind": "num",
+    "label": "Accounts ever 120+ days past due",
+    "group": "Bureau",
+    "default": 0.0,
+    "min": 0.0,
+    "max": 8.0,
+    "missing_share": 0.0,
+    "in_scorecard": false
+  },
+  "num_actv_bc_tl": {
+    "kind": "num",
+    "label": "Active bankcard accounts",
+    "group": "Bureau",
+    "default": 3.0,
+    "min": 0.0,
+    "max": 12.0,
+    "missing_share": 0.0,
+    "in_scorecard": false
+  },
+  "num_actv_rev_tl": {
+    "kind": "num",
+    "label": "Active revolving accounts",
+    "group": "Bureau",
+    "default": 5.0,
+    "min": 1.0,
+    "max": 18.0,
+    "missing_share": 0.0,
+    "in_scorecard": false
+  },
+  "num_bc_sats": {
+    "kind": "num",
+    "label": "Satisfactory bankcard accounts",
+    "group": "Bureau",
+    "default": 4.0,
+    "min": 0.0,
+    "max": 16.0,
+    "missing_share": 0.0,
+    "in_scorecard": false
+  },
+  "num_bc_tl": {
+    "kind": "num",
+    "label": "Bankcard accounts",
+    "group": "Bureau",
+    "default": 7.0,
+    "min": 1.0,
+    "max": 26.0,
+    "missing_share": 0.0,
+    "in_scorecard": false
+  },
+  "num_il_tl": {
+    "kind": "num",
+    "label": "Instalment accounts",
+    "group": "Bureau",
+    "default": 6.0,
+    "min": 0.0,
+    "max": 39.0,
+    "missing_share": 0.0,
+    "in_scorecard": false
+  },
+  "num_op_rev_tl": {
+    "kind": "num",
+    "label": "Open revolving accounts",
+    "group": "Bureau",
+    "default": 7.0,
+    "min": 1.0,
+    "max": 25.0,
+    "missing_share": 0.0,
+    "in_scorecard": false
+  },
+  "num_rev_accts": {
+    "kind": "num",
+    "label": "Revolving accounts",
+    "group": "Bureau",
+    "default": 13.0,
+    "min": 3.0,
+    "max": 44.0,
+    "missing_share": 0.0,
+    "in_scorecard": false
+  },
+  "num_rev_tl_bal_gt_0": {
+    "kind": "num",
+    "label": "Revolving accounts with a balance",
+    "group": "Bureau",
+    "default": 5.0,
+    "min": 1.0,
+    "max": 18.0,
+    "missing_share": 0.0,
+    "in_scorecard": false
+  },
+  "num_sats": {
+    "kind": "num",
+    "label": "Satisfactory accounts",
+    "group": "Bureau",
+    "default": 10.0,
+    "min": 3.0,
+    "max": 31.0,
+    "missing_share": 0.0,
+    "in_scorecard": false
+  },
+  "num_tl_120dpd_2m": {
+    "kind": "num",
+    "label": "Accounts 120+ dpd in last 2 months",
+    "group": "Bureau",
+    "default": 0.0,
+    "min": 0.0,
+    "max": 0.0,
+    "missing_share": 0.0332175,
+    "in_scorecard": false
+  },
+  "num_tl_30dpd": {
+    "kind": "num",
+    "label": "Accounts 30 dpd now",
+    "group": "Bureau",
+    "default": 0.0,
+    "min": 0.0,
+    "max": 0.0,
+    "missing_share": 0.0,
+    "in_scorecard": false
+  },
+  "num_tl_90g_dpd_24m": {
+    "kind": "num",
+    "label": "Accounts 90+ dpd in last 24 months",
+    "group": "Bureau",
+    "default": 0.0,
+    "min": 0.0,
+    "max": 3.0,
+    "missing_share": 0.0,
+    "in_scorecard": false
+  },
+  "num_tl_op_past_12m": {
+    "kind": "num",
+    "label": "Accounts opened in past 12 months",
+    "group": "Bureau",
+    "default": 2.0,
+    "min": 0.0,
+    "max": 9.0,
+    "missing_share": 0.0,
+    "in_scorecard": false
+  },
+  "pct_tl_nvr_dlq": {
+    "kind": "num",
+    "label": "% of accounts never delinquent",
+    "group": "Bureau",
+    "default": 98.0,
+    "min": 57.1,
+    "max": 100.0,
+    "missing_share": 0.0002575,
+    "in_scorecard": false
+  },
+  "percent_bc_gt_75": {
+    "kind": "num",
+    "label": "% of bankcards over 75% used",
+    "group": "Bureau",
+    "default": 50.0,
+    "min": 0.0,
+    "max": 100.0,
+    "missing_share": 0.0102575,
+    "in_scorecard": true
+  },
+  "pub_rec_bankruptcies": {
+    "kind": "num",
+    "label": "Public-record bankruptcies",
+    "group": "Bureau",
+    "default": 0.0,
+    "min": 0.0,
+    "max": 2.0,
+    "missing_share": 0.0,
+    "in_scorecard": false
+  },
+  "tax_liens": {
+    "kind": "num",
+    "label": "Tax liens",
+    "group": "Bureau",
+    "default": 0.0,
+    "min": 0.0,
+    "max": 2.0,
+    "missing_share": 0.0,
+    "in_scorecard": false
+  },
+  "tot_hi_cred_lim": {
+    "kind": "num",
+    "label": "Total highest credit limit ($)",
+    "group": "Bureau",
+    "default": 92096.0,
+    "min": 5900.0,
+    "max": 879443.3500000013,
+    "missing_share": 0.0,
+    "in_scorecard": true
+  },
+  "total_bal_ex_mort": {
+    "kind": "num",
+    "label": "Total balance excluding mortgage ($)",
+    "group": "Bureau",
+    "default": 33644.0,
+    "min": 1612.9950000000001,
+    "max": 273536.05000000005,
+    "missing_share": 0.0,
+    "in_scorecard": false
+  },
+  "total_bc_limit": {
+    "kind": "num",
+    "label": "Total bankcard limit ($)",
+    "group": "Bureau",
+    "default": 13300.0,
+    "min": 0.0,
+    "max": 116800.0,
+    "missing_share": 0.0,
+    "in_scorecard": false
+  },
+  "total_il_high_credit_limit": {
+    "kind": "num",
+    "label": "Total instalment high credit limit ($)",
+    "group": "Bureau",
+    "default": 27760.0,
+    "min": 0.0,
+    "max": 233698.02500000002,
+    "missing_share": 0.0,
+    "in_scorecard": false
+  },
+  "home_ownership": {
+    "kind": "cat",
+    "label": "Home ownership",
+    "group": "Applicant",
+    "levels": [
+      "MORTGAGE",
+      "RENT",
+      "OWN"
+    ],
+    "default": "MORTGAGE",
+    "in_scorecard": true
+  },
+  "verification_status": {
+    "kind": "cat",
+    "label": "Income verification",
+    "group": "Applicant",
+    "levels": [
+      "Not Verified",
+      "Source Verified",
+      "Verified"
+    ],
+    "default": "Not Verified",
+    "in_scorecard": true
+  },
+  "purpose": {
+    "kind": "cat",
+    "label": "Loan purpose",
+    "group": "Applicant",
+    "levels": [
+      "debt_consolidation",
+      "credit_card",
+      "home_improvement",
+      "other",
+      "major_purchase",
+      "medical",
+      "car",
+      "small_business",
+      "moving",
+      "vacation"
+    ],
+    "default": "debt_consolidation",
+    "in_scorecard": true
+  }
+}

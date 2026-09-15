@@ -1,0 +1,767 @@
+{
+  "project": "LendingClub application PD scorecard (36-month loans)",
+  "champion": "xgb_monotone",
+  "champion_rule_file": "champion_rule.json",
+  "data": {
+    "source": "Kaggle wordsforthewise/lending-club accepted_2007_to_2018Q4",
+    "rows_in_file": 2260701,
+    "snapshot": "Mar-2019",
+    "train_rows_used": 400000,
+    "train_rows_available": 438588,
+    "valid_rows": 107338,
+    "oot_rows": 318277,
+    "sampling_note": "Train was stratified-downsampled from 438,588 to 400,000 rows",
+    "train_window": "Jan-2013 to Aug-2015",
+    "valid_window": "Sep-2015 to Dec-2015",
+    "oot_window": "Jan-2016 to Dec-2016",
+    "bad_rate_train": 0.031275,
+    "bad_rate_valid": 0.036743744060817235,
+    "bad_rate_oot": 0.04338359353644781,
+    "n_features_candidate": 62,
+    "n_pass_iv": 27,
+    "n_after_corr": 20,
+    "n_after_vif": 20,
+    "n_scorecard_vars": 18
+  },
+  "oot": {
+    "ref_xgb_plus_LC_grade": {
+      "auc": 0.7248939077670953,
+      "gini": 0.44978781553419056,
+      "ks": 0.32792887878726856,
+      "pr_auc": 0.11294836882942269,
+      "brier": 0.04012776976366857,
+      "ece": 0.004402592478600684,
+      "auc_ci": [
+        0.7209310165675162,
+        0.7291253055882487
+      ],
+      "role": "reference"
+    },
+    "ref_LC_subgrade_only": {
+      "auc": 0.7061284123514819,
+      "gini": 0.4122568247029639,
+      "ks": 0.30112502567821786,
+      "pr_auc": 0.09870433936614746,
+      "brier": 0.04048740003161198,
+      "ece": 0.004782830122209314,
+      "auc_ci": [
+        0.7018089878361373,
+        0.7105623261018881
+      ],
+      "role": "reference"
+    },
+    "xgb_tuned": {
+      "auc": 0.6982622021167357,
+      "gini": 0.39652440423347146,
+      "ks": 0.28724318233206014,
+      "pr_auc": 0.0964486046243746,
+      "brier": 0.04055924104394445,
+      "ece": 0.006740535835844214,
+      "auc_ci": [
+        0.6941342345425942,
+        0.7026820119875128
+      ],
+      "role": "ladder / challenger"
+    },
+    "xgb_monotone": {
+      "auc": 0.6959023971085697,
+      "gini": 0.39180479421713943,
+      "ks": 0.2822941214997612,
+      "pr_auc": 0.09472410926204125,
+      "brier": 0.04060080612637591,
+      "ece": 0.006794881262603779,
+      "auc_ci": [
+        0.6917039830614662,
+        0.7003484454637301
+      ],
+      "role": "champion candidate"
+    },
+    "l2_lr": {
+      "auc": 0.6726956860502615,
+      "gini": 0.34539137210052306,
+      "ks": 0.2476004521969516,
+      "pr_auc": 0.08307800672656221,
+      "brier": 0.040861022691196805,
+      "ece": 0.006872790327567572,
+      "auc_ci": [
+        0.668244404150425,
+        0.6770427016969242
+      ],
+      "role": "ladder / challenger"
+    },
+    "plain_lr": {
+      "auc": 0.6726327616432243,
+      "gini": 0.34526552328644855,
+      "ks": 0.24805510964671817,
+      "pr_auc": 0.08293229190384069,
+      "brier": 0.040862798149761785,
+      "ece": 0.006840385020340646,
+      "auc_ci": [
+        0.6682210090824708,
+        0.6770255893271242
+      ],
+      "role": "ladder / challenger"
+    },
+    "elasticnet_lr": {
+      "auc": 0.6726256161321331,
+      "gini": 0.34525123226426624,
+      "ks": 0.2476738506452129,
+      "pr_auc": 0.08296975573967902,
+      "brier": 0.04086218887534229,
+      "ece": 0.0068534293273174495,
+      "auc_ci": [
+        0.6682065339561077,
+        0.6770227204592365
+      ],
+      "role": "champion candidate"
+    },
+    "l1_lr": {
+      "auc": 0.672436748598505,
+      "gini": 0.34487349719701,
+      "ks": 0.24704116351387162,
+      "pr_auc": 0.08305275444262974,
+      "brier": 0.040861476954092715,
+      "ece": 0.006893084110221779,
+      "auc_ci": [
+        0.667991814994405,
+        0.6768838758319883
+      ],
+      "role": "ladder / challenger"
+    },
+    "woe_scorecard": {
+      "auc": 0.6705982697610806,
+      "gini": 0.3411965395221612,
+      "ks": 0.24558491855777165,
+      "pr_auc": 0.08122490665159533,
+      "brier": 0.040894789977636174,
+      "ece": 0.006958350957164794,
+      "auc_ci": [
+        0.6661690421567394,
+        0.6750682423004312
+      ],
+      "role": "champion candidate"
+    }
+  },
+  "valid": {
+    "plain_lr": {
+      "auc": 0.6937375226202013,
+      "gini": 0.38747504524040255,
+      "ks": 0.2866492286286205,
+      "brier": 0.03476181105187085,
+      "ece": 0.0018341327031848559
+    },
+    "l2_lr": {
+      "auc": 0.6936685182786686,
+      "gini": 0.3873370365573372,
+      "ks": 0.28493758058394636,
+      "brier": 0.03476283899064062,
+      "ece": 0.0018090020280201913
+    },
+    "l1_lr": {
+      "auc": 0.6934796348641117,
+      "gini": 0.38695926972822337,
+      "ks": 0.28505739344576125,
+      "brier": 0.03476280066503705,
+      "ece": 0.002046136072325953
+    },
+    "elasticnet_lr": {
+      "auc": 0.6937177929059329,
+      "gini": 0.3874355858118659,
+      "ks": 0.2862306756945144,
+      "brier": 0.03476174181989614,
+      "ece": 0.0018627335652259438
+    },
+    "woe_scorecard": {
+      "auc": 0.6912247974142983,
+      "gini": 0.38244959482859664,
+      "ks": 0.28229294303077684,
+      "brier": 0.03478213990607157,
+      "ece": 0.002627264261073979
+    },
+    "xgb_tuned": {
+      "auc": 0.7207906871020682,
+      "gini": 0.44158137420413635,
+      "ks": 0.32411671990571056,
+      "brier": 0.034473494099751166,
+      "ece": 0.001660422455439146
+    },
+    "xgb_monotone": {
+      "auc": 0.7179461051839708,
+      "gini": 0.4358922103679417,
+      "ks": 0.3258296186065622,
+      "brier": 0.034512757969528095,
+      "ece": 0.0014924045421517895
+    },
+    "ref_xgb_plus_LC_grade": {
+      "auc": 0.7433396194909478,
+      "gini": 0.4866792389818957,
+      "ks": 0.35882751483611736,
+      "brier": 0.03420112556847442,
+      "ece": 0.0013001374802705382
+    },
+    "ref_LC_subgrade_only": {
+      "auc": 0.7199639028257219,
+      "gini": 0.43992780565144374,
+      "ks": 0.3286627717342366,
+      "brier": 0.0345605280278792,
+      "ece": 0.004070037940227521
+    }
+  },
+  "psi": {
+    "champion": "xgb_monotone",
+    "psi_train_vs_valid": 0.005150386042784755,
+    "psi_train_vs_oot": 0.001162870492211629,
+    "psi_valid_vs_oot": 0.003554143803252402,
+    "mean_score_train": 590.070723929404,
+    "mean_score_valid": 590.2497327895098,
+    "mean_score_oot": 589.7224572024653,
+    "mean_pd_train": 0.03597882920738693,
+    "mean_pd_oot": 0.03658871227384404,
+    "label_train_vs_oot": "stable (<0.10)"
+  },
+  "label_sensitivity": {
+    "champion": "xgb_monotone",
+    "definition": "bad = Charged Off/Default AND last payment <= month 9 on book (90+ DPD within 12 months)",
+    "oot_loans_total": 318277,
+    "oot_loans_dropped_by_label": 0,
+    "oot_bad_rate_main": 0.04338359353644781,
+    "oot_auc_main": 0.6959023971085697,
+    "oot_bad_rate_window_lastpay_le_12": 0.06318709803096045,
+    "oot_auc_window_lastpay_le_12": 0.6897565607795898,
+    "oot_share_open_at_cut": 0.2810884858158146,
+    "oot_n_old_label_resolved": 228813,
+    "oot_bad_rate_old_lifetime_resolved_only": 0.1984939666889556,
+    "oot_auc_old_lifetime_resolved_only": 0.6795077397520826,
+    "oot_mean_pred_champion": 0.03658871227384404,
+    "matured_2013_14_lifetime_bad_rate": 0.1319165601995498,
+    "matured_2013_14_12m_bad_rate": 0.0296929184157693,
+    "lifetime_to_12m_ratio_matured": 4.442694327058523,
+    "note": "Same champion, same 2016 loans, three label definitions. Ranking power (AUC) is similar; only the bad-rate LEVEL depends on the definition. The old label dropped the loans still open at the data cut."
+  },
+  "cutoff": {
+    "assumptions": {
+      "margin_pct_of_principal": 0.06,
+      "lgd": 0.85,
+      "ead_pct_of_principal": 0.9,
+      "note": "ASSUMED, not observed, on the 12-month horizon of the label. Margin = 12-month net interest margin after funding and servicing cost on a GOOD loan, as % of principal; a BAD loan (90+ DPD inside 12 months, so most principal still outstanding) loses EAD x LGD x principal. Flat pricing: LendingClub risk-based pricing is ignored; losses after month 12 are not in the label."
+    },
+    "chosen_on": "validation",
+    "cutoff_pd": 0.07085777569700538,
+    "valid_approval_rate": 0.8862844472600571,
+    "valid_bad_rate_approved": 0.0285077576420132,
+    "valid_profit_per_application": 428.8038043376996,
+    "oot_approval_rate_at_cutoff": 0.8929768723470436,
+    "oot_bad_rate_approved": 0.035318457218856215,
+    "oot_profit_per_application": 338.34176676291406,
+    "oot_profit_approve_all": 285.335868991476,
+    "oot_best_possible_cutoff_pd": 0.053453151449115346,
+    "mean_loan_amount": 12680.51728525781
+  },
+  "bootstrap_reps": 1000,
+  "scorecard": {
+    "pdo": 20.0,
+    "base_score": 600.0,
+    "base_odds": 50.0
+  },
+  "monitoring_status": {
+    "Score PSI (train vs current)": "GREEN",
+    "Max input CSI": "GREEN",
+    "Gini decline vs validation (relative)": "AMBER",
+    "Calibration: mean predicted PD / actual": "AMBER",
+    "Grades failing correlation-adjusted (Vasicek rho=0.03) test at 5% (of 8)": "GREEN",
+    "Portfolio calibration: Vasicek two-sided p (rho=0.03)": "GREEN"
+  },
+  "n_grades_failing_binomial_oot": 5,
+  "n_grades_failing_vasicek_oot": 0,
+  "benchmark_fixes": {
+    "calibration_tests": {
+      "base_rho": 0.03,
+      "rho_grid": [
+        0.01,
+        0.02,
+        0.03,
+        0.04
+      ],
+      "calibration_intercept_slope": {
+        "xgb_monotone": {
+          "valid": {
+            "intercept_citl": -0.00012093516511812313,
+            "intercept_ci": [
+              -0.0323527925416876,
+              0.032110922211451357
+            ],
+            "slope": 0.999727137432286,
+            "slope_ci": [
+              0.9574645839465066,
+              1.0419896909180655
+            ],
+            "n": 107338,
+            "mean_pred": 0.03674791033374871,
+            "obs_rate": 0.036743744060817235
+          },
+          "oot": {
+            "intercept_citl": 0.18224464276620728,
+            "intercept_ci": [
+              0.16494330024551004,
+              0.1995459852869045
+            ],
+            "slope": 0.9305801722185478,
+            "slope_ci": [
+              0.9072949384340847,
+              0.953865406003011
+            ],
+            "n": 318277,
+            "mean_pred": 0.03658871227384404,
+            "obs_rate": 0.04338359353644781
+          }
+        },
+        "woe_scorecard": {
+          "valid": {
+            "intercept_citl": -0.0008955151931673774,
+            "intercept_ci": [
+              -0.03299905766180799,
+              0.031208027275473234
+            ],
+            "slope": 0.9993031251619224,
+            "slope_ci": [
+              0.9510332044826078,
+              1.0475730458412371
+            ],
+            "n": 107338,
+            "mean_pred": 0.03677485286365686,
+            "obs_rate": 0.036743744060817235
+          },
+          "oot": {
+            "intercept_citl": 0.18549786465167942,
+            "intercept_ci": [
+              0.16827138271636422,
+              0.20272434658699462
+            ],
+            "slope": 0.9298094247339563,
+            "slope_ci": [
+              0.9030092124121077,
+              0.9566096370558049
+            ],
+            "n": 318277,
+            "mean_pred": 0.03642524257928302,
+            "obs_rate": 0.04338359353644781
+          }
+        }
+      },
+      "portfolio_oot": {
+        "n": 318277,
+        "bads": 13808,
+        "predicted_pd": 0.03658871227384404,
+        "observed_rate": 0.04338359353644781,
+        "binomial_p_two": 1.1082114384427374e-87,
+        "jeffreys_p_two": 1.0139129371952538e-87,
+        "vasicek_p_two_rho0.01": 0.3814473488886861,
+        "vasicek_p_two_rho0.02": 0.4964340989866816,
+        "vasicek_p_two_rho0.03": 0.5448872925836349,
+        "vasicek_p_two_rho0.04": 0.5700764875026004
+      },
+      "grades_failing_binomial_5pct": 5,
+      "grades_failing_jeffreys_5pct": 5,
+      "grades_failing_vasicek_5pct": 0,
+      "grades_failing_vasicek_1pct": 0,
+      "method_note": "Binomial assumes independent defaults (reference only). Jeffreys is a Bayesian posterior test, still independent. Vasicek integrates the binomial over one systematic factor with asset correlation rho."
+    },
+    "calibration_longrun": {
+      "champion": "xgb_monotone",
+      "long_run_window": "issue years 2013-2015 (development window only; 2016 never used for fitting)",
+      "long_run_default_rate": 0.03235053835135165,
+      "default_rate_by_year": {
+        "2013": 0.028579394953297085,
+        "2014": 0.03038075905763671,
+        "2015": 0.03482084160970403
+      },
+      "validation_default_rate": 0.036743744060817235,
+      "moc_rel_stated": 0.1,
+      "moc_note": "STATED judgement, not estimated: +10% relative to the long-run PD (table also shows 0% and 20%). Real MoC is sized from estimation error, data deficiency and model weakness.",
+      "target_pd_with_moc": 0.03558559218648682,
+      "oot_obs_rate": 0.04338359353644781,
+      "oot_pred_over_actual_before": 0.8433767074436748,
+      "oot_pred_over_actual_after": 0.8306730734338131,
+      "oot_mean_pred_before": 0.03658871227384404,
+      "oot_mean_pred_after": 0.03603758297952441,
+      "oot_ece_before": 0.006794881262603779,
+      "oot_ece_after": 0.007346010556923392,
+      "ex_post_moc_that_would_have_covered_2016": 0.3410470349911561,
+      "intercept_shift_champion": -0.01614355575621524,
+      "reading": "The long-run anchor is a through-the-cycle PD (capital / provisioning style). 2016 is a worse vintage than 2013-2015, so it sits further below the 2016 outcome than the point-in-time calibrator; the stated MoC closes only part of the gap."
+    },
+    "default_reconciliation": {
+      "definition": "bad = Charged Off / Default AND last payment <= month 9",
+      "population": "36-month loans issued 2013-2016",
+      "charged_off_loans": 122200,
+      "charged_off_share_last_payment_month_le_9": 0.25752045826513914,
+      "charged_off_share_last_payment_month_10_12": 0.12562193126022914,
+      "charged_off_share_last_payment_after_12": 0.6168576104746317,
+      "charged_off_never_paid_month0_share": 0.006350245499181669,
+      "median_last_payment_month_charged_off": 15.0,
+      "late_or_default_statuses_considered": [
+        "Late (31-120 days)",
+        "Late (16-30 days)",
+        "In Grace Period",
+        "Default"
+      ],
+      "loans_in_those_statuses_with_last_payment_le_9": 0,
+      "of_which_not_in_bad_class": 0,
+      "share_not_in_bad_class": 0.0,
+      "not_bad_as_share_of_labelled_bads": 0.0,
+      "oot_bad_rate_main": 0.04338359353644781,
+      "oot_bad_rate_if_added": 0.04338359353644781,
+      "charge_off_date_available": false,
+      "lag_note": "No charge-off date in the public file: the last-payment-to-charge-off lag is not measured. Typical convention is charge-off at ~120-150 DPD, i.e. ~4-5 months after the last payment, which supports month 9 as the 90+ DPD-by-month-12 boundary."
+    },
+    "rolling_origin": {
+      "folds": [
+        {
+          "train_years": "2013-2013",
+          "test_year": 2014,
+          "model": "woe_scorecard",
+          "n_train": 89333,
+          "n_test": 162570,
+          "gini": 0.35196893649234173,
+          "auc": 0.6759844682461709,
+          "ks": 0.2509783379535591,
+          "ece": 0.002117641191225206,
+          "brier": 0.029095190090188794,
+          "mean_pred": 0.028597366381816116,
+          "obs_rate": 0.03038075905763671,
+          "pred_over_actual": 0.9412986136245891
+        },
+        {
+          "train_years": "2013-2013",
+          "test_year": 2014,
+          "model": "xgb_monotone",
+          "n_train": 89333,
+          "n_test": 162570,
+          "gini": 0.38627337023174757,
+          "auc": 0.6931366851158738,
+          "ks": 0.28839433503945655,
+          "ece": 0.00310414786732878,
+          "brier": 0.029019562048461987,
+          "mean_pred": 0.029711862530135753,
+          "obs_rate": 0.03038075905763671,
+          "pred_over_actual": 0.9779828895574345
+        },
+        {
+          "train_years": "2013-2014",
+          "test_year": 2015,
+          "model": "woe_scorecard",
+          "n_train": 212972,
+          "n_test": 282934,
+          "gini": 0.3775529527711088,
+          "auc": 0.6887764763855544,
+          "ks": 0.27549742026388946,
+          "ece": 0.003924026490978803,
+          "brier": 0.0330938696017221,
+          "mean_pred": 0.031322691949749806,
+          "obs_rate": 0.03482084160970403,
+          "pred_over_actual": 0.899538624046946
+        },
+        {
+          "train_years": "2013-2014",
+          "test_year": 2015,
+          "model": "xgb_monotone",
+          "n_train": 212972,
+          "n_test": 282934,
+          "gini": 0.4168247626334809,
+          "auc": 0.7084123813167404,
+          "ks": 0.3047051422165219,
+          "ece": 0.004341201468233222,
+          "brier": 0.03294482975495447,
+          "mean_pred": 0.030907032705024477,
+          "obs_rate": 0.03482084160970403,
+          "pred_over_actual": 0.8876015419573078
+        },
+        {
+          "train_years": "2013-2015",
+          "test_year": 2016,
+          "model": "woe_scorecard",
+          "n_train": 400000,
+          "n_test": 318277,
+          "gini": 0.3411965395221612,
+          "auc": 0.6705982697610806,
+          "ks": 0.24558491855777165,
+          "ece": 0.006958350957164794,
+          "brier": 0.040894789977636174,
+          "mean_pred": 0.03642524257928302,
+          "obs_rate": 0.04338359353644781,
+          "pred_over_actual": 0.8396087002032491
+        },
+        {
+          "train_years": "2013-2015",
+          "test_year": 2016,
+          "model": "xgb_monotone",
+          "n_train": 400000,
+          "n_test": 318277,
+          "gini": 0.39180479421713943,
+          "auc": 0.6959023971085697,
+          "ks": 0.2822941214997612,
+          "ece": 0.006794881262603779,
+          "brier": 0.04060080612637591,
+          "mean_pred": 0.03658871227384404,
+          "obs_rate": 0.04338359353644781,
+          "pred_over_actual": 0.8433767074436748
+        }
+      ],
+      "gini_range_scorecard": [
+        0.3411965395221612,
+        0.3775529527711088
+      ],
+      "gini_range_xgb_monotone": [
+        0.38627337023174757,
+        0.4168247626334809
+      ],
+      "xgb_minus_scorecard_gini_by_year": {
+        "2014": 0.03430443373940584,
+        "2015": 0.03927180986237211,
+        "2016": 0.050608254694978205
+      },
+      "fixed_from_main_fit": [
+        "coarse-bin cut points",
+        "scorecard variable list",
+        "XGBoost hyper-parameters",
+        "monotone constraint signs"
+      ],
+      "runtime_s": 48.6
+    },
+    "realised_economics": {
+      "horizon_note": "realised = lifetime cash to the data cut, before funding/servicing cost; 2016 loans only partly matured; total_pymnt includes recoveries",
+      "total_pymnt_minus_components_median_abs_oot": 0.0006418229058908764,
+      "assumed": {
+        "margin_12m": 0.06,
+        "lgd": 0.85,
+        "ead": 0.9,
+        "loss_per_bad_of_principal": 0.765
+      },
+      "realised_valid": {
+        "net_return_all": 0.05907217796180303,
+        "net_return_good_loans": 0.08780167082003404,
+        "loss_on_bad_loans": 0.7230678286607718
+      },
+      "realised_oot": {
+        "net_return_all": 0.011505291513729178,
+        "net_return_good_loans": 0.04673876201060116,
+        "loss_on_bad_loans": 0.7284355514224752
+      },
+      "realised_ead_share_bad_loans": 0.8716050801232407,
+      "realised_lgd_on_ead_bad_loans": 0.9070635315205056,
+      "realised_loss_per_dollar_funded_bad": 0.7273102596283378,
+      "assumed_cutoff_pd": 0.07085777569700538,
+      "realised_best_cutoff_pd_valid": 0.08395343928124796,
+      "realised_best_cutoff_pd_oot": 0.04508320354627303,
+      "approval_at_assumed_cutoff_oot": 0.8929768723470436,
+      "realised_profit_per_app_at_assumed_cutoff_oot": 209.94318058926228,
+      "realised_profit_per_app_approve_all_oot": 145.89275872238207,
+      "realised_best_profit_per_app_oot": 228.4649826834101,
+      "realised_profit_per_app_at_assumed_cutoff_valid": 771.0776226633594,
+      "realised_profit_per_app_approve_all_valid": 755.7884881883947
+    },
+    "discrimination": {
+      "oot": {
+        "woe_scorecard": {
+          "sample": "OOT 2016",
+          "n": 318277,
+          "gini_somers_d": 0.3411965395221612,
+          "somers_d_ci_low": 0.3324307439276615,
+          "somers_d_ci_high": 0.34996233511666097,
+          "auc": 0.6705982697610806,
+          "auc_ci_low": 0.6662153719638307,
+          "auc_ci_high": 0.6749811675583305,
+          "accuracy_ratio": 0.3411965392842986,
+          "cap_area": 0.663197103653973,
+          "ar_minus_gini": -2.378626184906807e-10
+        },
+        "xgb_monotone": {
+          "sample": "OOT 2016",
+          "n": 318277,
+          "gini_somers_d": 0.39180479421713965,
+          "somers_d_ci_low": 0.3831974162253351,
+          "somers_d_ci_high": 0.4004121722089442,
+          "auc": 0.6959023971085698,
+          "auc_ci_low": 0.6915987081126675,
+          "auc_ci_high": 0.7002060861044721,
+          "accuracy_ratio": 0.3918047944550019,
+          "cap_area": 0.6874034472533673,
+          "ar_minus_gini": 2.3786222991262207e-10
+        },
+        "elasticnet_lr": {
+          "sample": "OOT 2016",
+          "n": 318277,
+          "gini_somers_d": 0.345251232264266,
+          "somers_d_ci_low": 0.33643094685942265,
+          "somers_d_ci_high": 0.3540715176691094,
+          "auc": 0.672625616132133,
+          "auc_ci_low": 0.6682154734297113,
+          "auc_ci_high": 0.6770357588345547,
+          "accuracy_ratio": 0.3452512282206022,
+          "cap_area": 0.6651364946337601,
+          "ar_minus_gini": -4.043663792696606e-09
+        },
+        "xgb_tuned": {
+          "sample": "OOT 2016",
+          "n": 318277,
+          "gini_somers_d": 0.3965244042334717,
+          "somers_d_ci_low": 0.3879347071363455,
+          "somers_d_ci_high": 0.4051141013305979,
+          "auc": 0.6982622021167358,
+          "auc_ci_low": 0.6939673535681727,
+          "auc_ci_high": 0.7025570506652989,
+          "accuracy_ratio": 0.3965243987626321,
+          "cap_area": 0.6896608727097149,
+          "ar_minus_gini": -5.470839559151841e-09
+        }
+      },
+      "validation": {
+        "woe_scorecard": {
+          "sample": "validation",
+          "n": 107338,
+          "gini_somers_d": 0.38244959482859664,
+          "somers_d_ci_low": 0.3665237717704626,
+          "somers_d_ci_high": 0.3983754178867307,
+          "auc": 0.6912247974142983,
+          "auc_ci_low": 0.6832618858852313,
+          "auc_ci_high": 0.6991877089433653,
+          "accuracy_ratio": 0.38244959482859653,
+          "cap_area": 0.6841984824000257,
+          "ar_minus_gini": -1.1102230246251565e-16
+        },
+        "xgb_monotone": {
+          "sample": "validation",
+          "n": 107338,
+          "gini_somers_d": 0.4358922103679417,
+          "somers_d_ci_low": 0.4204318537142717,
+          "somers_d_ci_high": 0.45135256702161164,
+          "auc": 0.7179461051839708,
+          "auc_ci_low": 0.7102159268571359,
+          "auc_ci_high": 0.7256762835108058,
+          "accuracy_ratio": 0.4358921784884704,
+          "cap_area": 0.709937933921989,
+          "ar_minus_gini": -3.187947128502344e-08
+        },
+        "elasticnet_lr": {
+          "sample": "validation",
+          "n": 107338,
+          "gini_somers_d": 0.38743558581186566,
+          "somers_d_ci_low": 0.37157549304215465,
+          "somers_d_ci_high": 0.40329567858157667,
+          "auc": 0.6937177929059328,
+          "auc_ci_low": 0.6857877465210773,
+          "auc_ci_high": 0.7016478392907883,
+          "accuracy_ratio": 0.387435598073201,
+          "cap_area": 0.6865998818087748,
+          "ar_minus_gini": 1.2261335335939094e-08
+        },
+        "xgb_tuned": {
+          "sample": "validation",
+          "n": 107338,
+          "gini_somers_d": 0.44158137420413635,
+          "somers_d_ci_low": 0.4261546155100979,
+          "somers_d_ci_high": 0.45700813289817477,
+          "auc": 0.7207906871020682,
+          "auc_ci_low": 0.713077307755049,
+          "auc_ci_high": 0.7285040664490874,
+          "accuracy_ratio": 0.4415813791086702,
+          "cap_area": 0.7126780129663393,
+          "ar_minus_gini": 4.904533834615421e-09
+        }
+      }
+    },
+    "fairness": {
+      "cutoff_pd": 0.07085777569700538,
+      "protected_attributes_in_data": false,
+      "geography_in_model": false,
+      "income_in_model": true,
+      "lowest_adverse_impact_ratio": 0.8012837435588575,
+      "bands_flagged_four_fifths": 0,
+      "best_approval_band": ">= $120k",
+      "worst_approval_band": "< $40k",
+      "approval_rate_overall": 0.8938063385038818,
+      "declined_applicants": 33799,
+      "scorecard_variables_mapped_to_adverse_action": 18,
+      "scorecard_variables": 18,
+      "caveat": "No protected-class data in the public file: this is an income-band screen, not a disparate-impact test; four-fifths < 0.80 is a review flag, not a finding."
+    },
+    "reject_check": {
+      "skipped": false,
+      "window": "2013-2016",
+      "rejected_applications_2013_2016": 10323895,
+      "accepted_applications_2013_2016_all_terms": 1225945,
+      "accept_share_by_year": {
+        "2013": 0.15050303877395182,
+        "2014": 0.1086183792315504,
+        "2015": 0.12836407177743217,
+        "2016": 0.08347108851347573
+      },
+      "risk_score_coverage_rejects_by_year": {
+        "2013": 0.9686940660391988,
+        "2014": 0.8683751357501164,
+        "2015": 0.17851813278337708,
+        "2016": 0.21348509415552697
+      },
+      "risk_score_caveat": "Risk_Score is FICO until about Nov-2013 and VantageScore afterwards; accepted fico is always FICO. Blank for most rejects from 2015.",
+      "median_dti_accepted_vs_rejected_2016": [
+        18.219999313354492,
+        20.639999389648438
+      ],
+      "median_amount_accepted_vs_rejected_2016": [
+        12400.0,
+        10000.0
+      ],
+      "median_risk_accepted_vs_rejected_2013": [
+        692.0,
+        646.0
+      ],
+      "share_rejects_below_660_where_scored_2013_2014": 0.6321971181522801,
+      "parcelling": {
+        "label": "SENSITIVITY, not reject inference",
+        "k_values": [
+          1.5,
+          2.0,
+          3.0
+        ],
+        "bands": "Risk_Score band (5) x DTI band (4), development window 2013-2015",
+        "rejects_with_score_share_of_2013_2015_rejects": 0.5086505794630592,
+        "share_of_scored_rejects_below_accepted_floor_660": 0.6335991215749351,
+        "rejects_sampled": 150000,
+        "gini_oot_accepted_only": 0.22458690732497155,
+        "gini_oot_by_k": {
+          "1.5": 0.22976497559737252,
+          "2.0": 0.22593035379791804,
+          "3.0": 0.21845160197732238
+        },
+        "implied_through_the_door_bad_rate_by_k": {
+          "1.5": 0.056541511168809226,
+          "2.0": 0.07365218558526195,
+          "3.0": 0.10787353441816742
+        },
+        "max_abs_coef_change_pct": 192.22094069660835
+      }
+    },
+    "model_roles": {
+      "decision_model_of_record": "woe_scorecard",
+      "decision_model_rationale": "points table, reason codes and adverse-action statements; fully explainable and recomputable by hand",
+      "challenger_benchmark": "xgb_monotone",
+      "challenger_rationale": "highest application-time accuracy; wins the frozen validation rule; supplies the PD for grading and the cut-off in this repository",
+      "frozen_rule_champion": "xgb_monotone",
+      "top_numeric_features_checked": 12,
+      "constrained_among_checked": 10,
+      "constrained_pdp_exactly_monotone": 10,
+      "constrained_ale_in_expected_direction": 10,
+      "unconstrained_among_checked": 2,
+      "unconstrained_ale_in_expected_direction": 0,
+      "unconstrained_with_no_expectation": 2,
+      "features_flagged_for_review": [],
+      "promotion_conditions_for_xgb_as_decision_model": [
+        "reason codes via SHAP or scorecard surrogate accepted by compliance",
+        "monotonicity evidence above re-run on each refresh",
+        "OOT gain over the scorecard stays above the frozen 0.010 AUC margin in the rolling-origin backtest"
+      ]
+    }
+  },
+  "runtime_minutes": 22.3,
+  "fast_mode": false
+}
